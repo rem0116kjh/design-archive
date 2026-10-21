@@ -1,6 +1,8 @@
-# 피치월드 디자인 분석과 포트폴리오 적용
+# 월드 — 디자인 참고 자료와 포트폴리오 적용
 
-분석 기준: 2026-10-21, https://pichiworld.co.kr/ 의 실제 첫 화면 및 공개 HTML/CSS, `/main` 페이지의 공개 HTML.
+후배들을 위해 제작한 디자인 포트폴리오의 월드 디자인 참고 자료 및 구현 분석 문서입니다.
+
+분석 기준: 2026-10-21, [피치월드](https://pichiworld.co.kr/)의 실제 첫 화면 및 공개 HTML/CSS, `/main` 페이지의 공개 HTML.
 
 ## 원본의 구성
 
@@ -30,10 +32,10 @@
 
 ## 자료 및 출처
 
-- 디자인 레퍼런스 및 우주 배경: https://pichiworld.co.kr/
-- 우주 배경 원본: https://pichiworld.co.kr/assets/images/gate-brand-bg.jpg
+- 디자인 레퍼런스 및 우주 배경: [피치월드](https://pichiworld.co.kr/)
+- 우주 배경 원본: [피치월드의 우주 배경 이미지](https://pichiworld.co.kr/assets/images/gate-brand-bg.jpg)
 - Barlow Condensed: Google Fonts / SIL Open Font License
-- Pretendard: https://github.com/orioncactus/pretendard / SIL Open Font License
+- Pretendard: [공식 폰트 저장소](https://github.com/orioncactus/pretendard) / SIL Open Font License
 - 우주인·노트북·favicon SVG, 프로젝트 그래픽과 REM 로고: 이 포트폴리오를 위해 직접 제작
 
 원본의 브랜드 로고·마스코트·음식 사진·추적 스크립트는 포트폴리오에 포함하지 않았습니다.

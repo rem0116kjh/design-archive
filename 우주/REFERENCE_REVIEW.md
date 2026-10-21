@@ -1,8 +1,10 @@
 # 참고 사이트 최종 비교
 
+후배들을 위해 제작한 디자인 포트폴리오의 우주 디자인 참고 자료 및 구현 비교 문서입니다.
+
 확인일: 2026-10-21
 
-참고: https://wacusglobal.com/en
+참고: [WACUS Global](https://wacusglobal.com/en)
 
 ## 판정
 

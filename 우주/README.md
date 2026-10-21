@@ -1,6 +1,6 @@
-# ORBIT — SPACE PORTFOLIO TEMPLATE
+# 우주 — ORBIT 디자인 포트폴리오
 
-후배들과 공유하고, 각자의 이야기로 바꿔 쓰는 우주 포트폴리오 디자인 템플릿입니다.
+후배들을 위해 제작한 디자인 포트폴리오입니다. 다양한 디자인과 코드를 참고하고, 자신의 이야기로 바꿔 사용할 수 있도록 준비했습니다.
 
 **회전하는 지구 · 앞뒤로 도는 프로젝트 카드 · 드래그 · 4단계 스크롤 장면 전환**이 중심입니다. 개인 이름·메일·계정·실제 프로젝트·학교·경력·수상 기록을 넣지 않았습니다. 화면에 보이는 프로젝트와 타임라인은 모두 예시입니다.
 
@@ -11,10 +11,10 @@
 로컬 서버를 쓰고 싶다면 이 폴더에서 실행합니다.
 
 ```sh
-python3 -m http.server 4187 --bind 127.0.0.1
+python3 -m http.server 4187 --bind localhost
 ```
 
-브라우저: `http://127.0.0.1:4187` / 종료: `Ctrl+C`
+실행한 로컬 서버에서 `index.html`을 엽니다. 종료는 `Ctrl+C`입니다.
 
 ## 처음 바꿀 곳
 
@@ -28,13 +28,13 @@ python3 -m http.server 4187 --bind 127.0.0.1
 const TEMPLATE = Object.freeze({
   brand: 'ORBIT',
   email: 'hello@example.com',
-  github: 'https://github.com/',
+  github: '', // 본인의 GitHub 프로필 링크 입력
   orbitSpeed: 0.19,
   globeSpeed: 0.09
 });
 ```
 
-연락처의 `hello@example.com`은 예약된 예시 주소입니다. GitHub 링크도 서비스 홈페이지로만 연결됩니다. 배포 전 본인의 주소로 바꾸세요. HTML에도 JavaScript 없는 환경을 위한 같은 예시 값이 있으므로 함께 바꿔 주세요.
+연락처의 `hello@example.com`은 예약된 예시 주소입니다. 위 설정 예시는 GitHub 링크를 비워 두었습니다. 배포 전 실제 파일의 기본 링크도 본인의 프로필 링크로 바꾸세요. HTML에도 JavaScript 없는 환경을 위한 같은 예시 값이 있으므로 함께 바꿔 주세요.
 
 ## 핵심 인터랙션
 

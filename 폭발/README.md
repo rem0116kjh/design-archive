@@ -1,10 +1,12 @@
-# Rem / 김진형 — Interactive Explosion Portfolio
+# 폭발 — 인터랙티브 디자인 포트폴리오
+
+후배들을 위해 제작한 디자인 포트폴리오입니다. 다양한 디자인과 코드를 참고하고, 자신의 이야기로 바꿔 사용할 수 있도록 준비했습니다.
 
 기존 Rem 포트폴리오의 실제 소개·프로젝트·대회·활동·연락처를 폭발 디자인에 연결한 독립 HTML 버전입니다. 올리브 블랙·오렌지, 3초 폭발 인트로와 Canvas 조형을 유지했습니다.
 
 ## 실행
 
-index.html을 더블클릭하면 열립니다. 폴더의 이미지·폰트·CSS·JS를 함께 보관하세요. 설치·빌드·외부 라이브러리가 필요하지 않습니다. 정적 서버를 쓰려면 이 폴더에서 python3 -m http.server 8080을 실행하고 http://localhost:8080을 여세요.
+index.html을 더블클릭하면 열립니다. 폴더의 이미지·폰트·CSS·JS를 함께 보관하세요. 설치·빌드·외부 라이브러리가 필요하지 않습니다. 정적 서버를 쓰려면 이 폴더에서 `python3 -m http.server 8080 --bind localhost`를 실행하고 해당 로컬 서버의 `index.html`을 여세요.
 
 이메일 복사는 HTTPS 또는 localhost에서 지원하며, 권한이 없으면 주소를 화면에 표시합니다.
 
@@ -19,9 +21,9 @@ index.html을 더블클릭하면 열립니다. 폴더의 이미지·폰트·CSS�
 
 원본은 /Users/luka/Desktop/portfolio-react/src/translations.js의 한국어 콘텐츠입니다. content.json은 연결 시점의 스냅샷이며 원본의 이후 변경을 자동으로 동기화하지 않습니다. 원본 React 프로젝트는 수정하지 않았습니다.
 
-- 기존 포트폴리오: https://rem0116kjh.github.io/portfolio-react/
-- GitHub: https://github.com/rem0116kjh
-- Velog: https://velog.io/@luka0116kjh/posts
+- 콘텐츠 예시: Rem / 김진형의 기존 포트폴리오.
+- GitHub 계정: `rem0116kjh`.
+- Velog 계정: `luka0116kjh`.
 
 ## 3D 프로그램 전시
 
