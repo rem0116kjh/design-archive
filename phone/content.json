@@ -1,0 +1,532 @@
+{
+  "profile": {
+    "name": "Jin-hyung Kim",
+    "koreanName": "김진형",
+    "github": "https://github.com/rem0116kjh",
+    "velog": "https://velog.io/@luka0116kjh/posts",
+    "email": "kjh08116@naver.com"
+  },
+  "projects": [
+    {
+      "id": "ghas",
+      "name": "GHAS 알리미",
+      "description": "경기자동차과학고 학생들을 위한 생활 지원 앱입니다. 급식과 시간표를 한곳에서 확인할 수 있습니다.",
+      "category": "학교생활 · 모바일 앱",
+      "tags": [
+        "Android",
+        "iOS",
+        "NEIS API"
+      ],
+      "links": [
+        {
+          "label": "Play Store",
+          "url": "https://play.google.com/store/apps/details?id=kr.hs.ghas.ghason"
+        },
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/kr/app/ghas%EC%95%8C%EB%A6%AC%EB%AF%B8/id6779186783"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rem0116kjh/ghaslunch1"
+        }
+      ],
+      "color": "#050505",
+      "label": "GHAS 알리미",
+      "details": [],
+      "note": "학교생활 · 모바일 앱",
+      "icon": "ghas.png"
+    },
+    {
+      "id": "suffice-patch",
+      "name": "SufficePatch",
+      "description": "Codex와 Claude Code가 코드 수정 전에 필요한 소스·프로젝트 지침·의존성·테스트 후보·Git 변경 내역을 모으는 스킬입니다. 다언어·모노레포 탐색과 요약·JSON 출력을 지원합니다.",
+      "category": "개발 도구 · AI 에이전트 스킬",
+      "tags": [
+        "Python",
+        "Codex",
+        "Claude Code"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rem0116kjh/suffice-patch"
+        },
+        {
+          "label": "스킬 설명",
+          "url": "https://rem0116kjh.github.io/suffice-patch/"
+        }
+      ],
+      "color": "#172334",
+      "label": "SufficePatch",
+      "details": [],
+      "note": "개발 도구 · AI 에이전트 스킬",
+      "icon": "suffice-patch.svg"
+    },
+    {
+      "id": "ktspace",
+      "name": "KTspace",
+      "description": "태양의 질량·거리·밝기 등 조건을 바꾸며 행성 궤도와 지구 환경을 비교하는 교육용 태양계 시뮬레이터입니다. 10가지 실험, 탐구 노트와 CSV 내보내기를 제공합니다.",
+      "category": "과학 교육 · 시뮬레이션",
+      "tags": [
+        "Python",
+        "Streamlit",
+        "Physics"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rem0116kjh/KTspace"
+        }
+      ],
+      "color": "#1a1e48",
+      "label": "KTspace",
+      "details": [],
+      "note": "과학 교육 · 시뮬레이션",
+      "icon": "ktspace.svg"
+    },
+    {
+      "id": "mapon",
+      "name": "Mapon",
+      "category": "대중교통 · 네이티브 앱",
+      "tags": [
+        "SwiftUI",
+        "Compose",
+        "Supabase"
+      ],
+      "description": "현재 위치 주변의 정류장, 버스 도착정보와 노선, 지하철 실시간 정보를 찾는 대중교통 앱입니다. iOS·Android의 검색·즐겨찾기·마이페이지와 중계 서버를 개발했습니다.",
+      "details": [
+        "주변 정류장·장소·역 검색과 실제 도착정보 조회",
+        "즐겨찾기와 최근 이용 기록의 로컬 저장·복원",
+        "SwiftUI·Jetpack Compose 화면과 HTTPS API 중계"
+      ],
+      "links": [],
+      "icon": "mapon.png",
+      "color": "#f4f4f4",
+      "note": "개인 개발 프로젝트",
+      "label": "Mapon"
+    },
+    {
+      "id": "gcpt",
+      "name": "GCPT",
+      "description": "GPT, Claude, Gemini의 토론을 시각화하고 추론 흐름을 분석합니다. 디자인과 일부 기능 구현에 참여했습니다.",
+      "category": "AI · 협업 프로젝트",
+      "tags": [
+        "AI Debate",
+        "시각화"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/cksdud32/gcpt"
+        }
+      ],
+      "color": "#6d4cf5",
+      "label": "GCPT",
+      "details": [],
+      "note": "AI · 협업 프로젝트",
+      "icon": "gcpt.svg"
+    },
+    {
+      "id": "lhlinux",
+      "name": "lhLinux",
+      "description": "Ubuntu 24.04 LTS 기반의 오픈소스 WSL2 CLI 배포판으로, 누구나 설치하고 개선할 수 있는 개발 환경 프로젝트입니다.",
+      "category": "Linux · CLI · Ubuntu",
+      "tags": [
+        "WSL2",
+        "CLI",
+        "Ubuntu"
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rem0116kjh/lhlinux"
+        }
+      ],
+      "color": "#ffad35",
+      "label": "lhLinux",
+      "details": [],
+      "note": "Linux · CLI · Ubuntu",
+      "icon": "lhlinux-logo.png"
+    },
+    {
+      "id": "love-consult",
+      "name": "Love Consult",
+      "label": "Love Consult",
+      "category": "상담 · 크로스플랫폼 앱",
+      "tags": [
+        "Flutter",
+        "Firebase",
+        "React"
+      ],
+      "description": "실제 상담사와의 1:1 상담 신청·수락·실시간 채팅을 연결하는 앱과 관리자 웹을 개발했습니다. 기존 네이티브 디자인을 Flutter 공통 앱으로 옮기고 Firebase 권한·상담 상태를 연결했습니다.",
+      "details": [
+        "상담 신청 → 대기 → 수락 → 실시간 메시지 → 내역 조회",
+        "사용자·관리자 권한과 신고·차단 흐름",
+        "로컬 Firebase 에뮬레이터에서 상담·채팅 흐름 검증"
+      ],
+      "links": [],
+      "icon": "love-consult.png",
+      "color": "#fde8f1",
+      "note": "개발 프로젝트 · 로컬 검증"
+    },
+    {
+      "id": "qnote",
+      "name": "QNote",
+      "category": "유틸리티 · 모바일 앱",
+      "tags": [
+        "React Native",
+        "Expo",
+        "TypeScript"
+      ],
+      "description": "메모, QR 생성·스캔과 파일 압축 기능을 다룬 모바일 앱 프로젝트입니다. 화면 흐름과 로컬 저장, 검색·복원 동작을 개발하고 개선했습니다.",
+      "details": [
+        "메모 검색과 로컬 기록 복원",
+        "QR 생성·저장·스캔 화면",
+        "이미지·파일 압축과 사용성 개선"
+      ],
+      "links": [],
+      "note": "이전 개발 기록",
+      "color": "#2e56bf",
+      "label": "QNote",
+      "icon": "qnote.svg"
+    },
+    {
+      "id": "fabguard",
+      "name": "FabGuard AI",
+      "category": "AI · 설비 이상 탐지 실험",
+      "tags": [
+        "Python",
+        "FastAPI",
+        "Machine Learning"
+      ],
+      "description": "합성 제조설비 데이터를 생성하고 이상 징후를 탐지하는 시뮬레이션 프로젝트입니다. 탐지 파이프라인과 대시보드를 연결하고 한국어 화면과 처리 성능을 개선했습니다.",
+      "details": [
+        "합성 센서 데이터와 설비 상태 시뮬레이션",
+        "이상 탐지 결과·상태 변화 대시보드",
+        "시뮬레이션 기반 실험과 검증"
+      ],
+      "links": [],
+      "note": "합성 데이터 기반 실험",
+      "color": "#1d6056",
+      "label": "FabGuard AI",
+      "icon": "fabguard.svg"
+    },
+    {
+      "id": "hrr",
+      "name": "Hrr · 흐르르",
+      "label": "Hrr",
+      "category": "애플리케이션 플랫폼 · 개발 참여",
+      "tags": [
+        "React Native",
+        "iOS",
+        "Android"
+      ],
+      "description": "흐르르 애플리케이션 플랫폼 개발에 참여했습니다. iOS·Android 화면과 앱 동작, 알림 연결, 플랫폼별 빌드·검증 작업을 진행했습니다.",
+      "details": [
+        "크로스플랫폼 화면·동작 개선",
+        "플랫폼별 빌드와 앱 검증",
+        "기존 데이터와 정상 기능을 유지하는 수정"
+      ],
+      "links": [],
+      "note": "협업 · 개발 참여",
+      "color": "#6e60d8",
+      "icon": "hrr.svg"
+    },
+    {
+      "id": "design-archive",
+      "name": "Design Archive",
+      "label": "Archive",
+      "category": "웹 · 인터랙티브 포트폴리오",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "description": "여러 디자인을 폴더별로 실행하고 검색·저장할 수 있는 HTML 포트폴리오 아카이브입니다. 아이폰, 우주, 데스크톱 등 서로 다른 인터랙션을 구현하고 반응형 화면을 구성했습니다.",
+      "details": [
+        "설치 없이 실행하는 독립 HTML 템플릿",
+        "템플릿 검색·책갈피와 미리보기 목록",
+        "목록과 배포용 ZIP 갱신 도구"
+      ],
+      "links": [
+        {
+          "label": "아카이브 열기",
+          "url": "../index.html"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/rem0116kjh/design-archive"
+        }
+      ],
+      "note": "웹 디자인 · 개발",
+      "color": "#ef965b",
+      "icon": "design-archive.svg"
+    }
+  ],
+  "awardGroups": [
+    {
+      "id": "development",
+      "name": "개발 분야",
+      "items": [
+        {
+          "date": "2026.07",
+          "title": "정보처리산업기사",
+          "badge": "합격"
+        },
+        {
+          "title": "총장배 로봇 프로그래밍 경진대회",
+          "badge": "3등"
+        },
+        {
+          "title": "미래를 그리는 알고리즘 경진대회",
+          "badge": "2등"
+        }
+      ]
+    },
+    {
+      "id": "hacking",
+      "name": "해킹 분야",
+      "items": [
+        {
+          "date": "2026",
+          "title": "FAUST CTF 2026",
+          "badge": "60등"
+        },
+        {
+          "date": "2026",
+          "title": "ASIS CTF Quals 2026, Iran Tech Olympics CTF 2026",
+          "badge": "예선 10등"
+        },
+        {
+          "date": "2026.08.22",
+          "title": "CCE 예선전",
+          "badge": "예선 15등"
+        },
+        {
+          "date": "2026",
+          "title": "COSS 청소년 사이버 해킹방어",
+          "badge": "예선 7등"
+        },
+        {
+          "date": "2026",
+          "title": "사이버가디언즈 CMX",
+          "badge": "팀별 18등"
+        },
+        {
+          "date": "2026",
+          "title": "SCA CTF",
+          "badge": "본선 20등"
+        },
+        {
+          "title": "현대오토에버 화이트해커 경진대회",
+          "badge": "입상"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "그 외 분야",
+      "items": [
+        {
+          "title": "교내 포트폴리오 경진대회",
+          "badge": "3등",
+          "detail": "1·2학년 연속 수상"
+        },
+        {
+          "title": "봉사 부문 표창",
+          "badge": "수상"
+        }
+      ]
+    }
+  ],
+  "activityGroups": [
+    {
+      "id": "development",
+      "name": "개발 분야",
+      "items": [
+        {
+          "date": "2026",
+          "title": "제8회 전국 학생 AI 경진대회",
+          "badge": "본선 진출",
+          "detail": "교과연계 AI 탐구 부문 · 결과 대기 중"
+        },
+        {
+          "date": "2026",
+          "title": "카카오 AI TOP 100",
+          "badge": "준비 중"
+        },
+        {
+          "date": "2025-2026",
+          "title": "비주얼캠프 도제활동",
+          "badge": "교육"
+        },
+        {
+          "date": "2026",
+          "title": "흐르르 애플리케이션 플랫폼",
+          "badge": "개발"
+        },
+        {
+          "date": "2024",
+          "title": "인공지능 창업체험과 특강",
+          "badge": "교육"
+        },
+        {
+          "date": "2024",
+          "title": "앱인벤터·메이커 활동",
+          "badge": "프로젝트"
+        }
+      ]
+    },
+    {
+      "id": "hacking",
+      "name": "해킹 분야",
+      "items": [
+        {
+          "date": "2026",
+          "title": "Null; 해킹팀",
+          "badge": "팀 리더"
+        },
+        {
+          "date": "2026",
+          "title": "Hwalbin 해킹팀",
+          "badge": "팀원",
+          "url": "https://ctftime.org/team/304129"
+        },
+        {
+          "date": "2026",
+          "title": "KISA 버그헌팅 실습훈련 초급과정",
+          "badge": "수료",
+          "detail": "수료증 취득"
+        },
+        {
+          "date": "2026",
+          "title": "HITCON CTF 2026",
+          "badge": "준비 중",
+          "url": "https://ctftime.org/event/3340"
+        },
+        {
+          "date": "2026",
+          "title": "경기 청소년 사이버 보안 캠프",
+          "badge": "참여"
+        },
+        {
+          "date": "2026",
+          "title": ".HACK 컨퍼런스",
+          "badge": "컨퍼런스"
+        },
+        {
+          "date": "2025",
+          "title": "현대오토에버 고교생 IT 꿈나무 화이트해커",
+          "badge": "교육"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "그 외 분야",
+      "items": [
+        {
+          "date": "2026",
+          "title": "The Ignition 2026 :: YHHS X Hashed",
+          "badge": "컨퍼런스"
+        },
+        {
+          "date": "2024–2026",
+          "title": "학생기자단과 학교 블로그",
+          "badge": "기자단"
+        },
+        {
+          "date": "2024–2025",
+          "title": "청소년운영위원회 정책부",
+          "badge": "위원"
+        },
+        {
+          "date": "2024",
+          "title": "네이버 청소년 크리에이터 스쿨",
+          "badge": "교육"
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "언어",
+      "items": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java"
+      ]
+    },
+    {
+      "name": "웹 프론트엔드",
+      "items": [
+        "React",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "앱 개발",
+      "items": [
+        "Jetpack Compose"
+      ]
+    },
+    {
+      "name": "백엔드",
+      "items": [
+        "FastAPI",
+        "Node.js",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "보안 & AI",
+      "items": [
+        "Ghidra",
+        "AI & ML",
+        "Robotics"
+      ]
+    },
+    {
+      "name": "개발 도구",
+      "items": [
+        "Docker",
+        "GitHub"
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "title": "lhlinux 0.1 개발 기록 — WSL2에 분석 도구와 로컬 AI를 묶어보기",
+      "url": "https://velog.io/@luka0116kjh/lhlinux-0.1-%EA%B0%9C%EB%B0%9C-%EA%B8%B0%EB%A1%9D-WSL2%EC%97%90-%EB%B6%84%EC%84%9D-%EB%8F%84%EA%B5%AC%EC%99%80-%EB%A1%9C%EC%BB%AC-AI%EB%A5%BC-%EB%AC%B6%EC%96%B4%EB%B3%B4%EA%B8%B0-cduhjv6l",
+      "date": "Thu, 10 Sep 2026 02:19:22 GMT"
+    },
+    {
+      "title": "Project Euler 26 - 순환마디 길이 구하기 코드 리뷰",
+      "url": "https://velog.io/@luka0116kjh/Project-Euler-26-%EC%88%9C%ED%99%98%EB%A7%88%EB%94%94-%EA%B8%B8%EC%9D%B4-%EA%B5%AC%ED%95%98%EA%B8%B0-%EC%BD%94%EB%93%9C-%EB%A6%AC%EB%B7%B0",
+      "date": "Tue, 25 Aug 2026 03:24:30 GMT"
+    },
+    {
+      "title": "[Project Euler 25] 1000자리가 되는 첫 피보나치 항 — 풀이부터 O(1) 최적화까지",
+      "url": "https://velog.io/@luka0116kjh/Project-Euler-25-1000%EC%9E%90%EB%A6%AC%EA%B0%80-%EB%90%98%EB%8A%94-%EC%B2%AB-%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98-%ED%95%AD-%ED%92%80%EC%9D%B4%EB%B6%80%ED%84%B0-O1-%EC%B5%9C%EC%A0%81%ED%99%94%EA%B9%8C%EC%A7%80",
+      "date": "Fri, 21 Aug 2026 06:18:09 GMT"
+    },
+    {
+      "title": "Android 위젯을 기준으로 iOS 급식 위젯 만들기 — WidgetKit, AppIntent, 그리고 Safari가 열리던 버그",
+      "url": "https://velog.io/@luka0116kjh/Android-%EC%9C%84%EC%A0%AF%EC%9D%84-%EA%B8%B0%EC%A4%80%EC%9C%BC%EB%A1%9C-iOS-%EA%B8%89%EC%8B%9D-%EC%9C%84%EC%A0%AF-%EB%A7%8C%EB%93%A4%EA%B8%B0-WidgetKit-AppIntent-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Safari%EA%B0%80-%EC%97%B4%EB%A6%AC%EB%8D%98-%EB%B2%84%EA%B7%B8",
+      "date": "Sun, 26 Jul 2026 15:46:07 GMT"
+    },
+    {
+      "title": "[Project Euler 15] 20×20 격자의 좌상단에서 우하단으로 가는 경로의 수 (Python, JS)",
+      "url": "https://velog.io/@luka0116kjh/Project-Euler-15-2020-%EA%B2%A9%EC%9E%90%EC%9D%98-%EC%A2%8C%EC%83%81%EB%8B%A8%EC%97%90%EC%84%9C-%EC%9A%B0%ED%95%98%EB%8B%A8%EC%9C%BC%EB%A1%9C-%EA%B0%80%EB%8A%94-%EA%B2%BD%EB%A1%9C%EC%9D%98-%EC%88%98-Python-JS",
+      "date": "Sat, 25 Jul 2026 06:09:18 GMT"
+    },
+    {
+      "title": "GHAS알리미 제작 및 후기",
+      "url": "https://velog.io/@luka0116kjh/GHAS%EC%95%8C%EB%A6%AC%EB%AF%B8",
+      "date": "Tue, 21 Jul 2026 12:36:56 GMT"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111511">
+  <meta name="description" content="작은 아이디어를 쓸모 있는 것으로. 웹, 앱, AI와 보안을 탐구하는 개발자 Rem의 포트폴리오.">
+  <title>Rem.log — Curiosity, made real.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="neon.css">
+  <script>
+    try { const theme = localStorage.getItem('rem-log.neon.theme.v1'); if (theme === 'dark' || theme === 'light') document.documentElement.dataset.theme = theme; } catch {}
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body id="top">
+<a class="skip-link" href="#main">본문으로 바로가기</a>
+<svg class="svg-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7"/></symbol>
+  <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"/></symbol>
+  <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="moon" viewBox="0 0 24 24"><path d="M20.5 13A8.6 8.6 0 0 1 11 3.5 8.6 8.6 0 1 0 20.5 13Z"/></symbol>
+  <symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.4 1.4m11.2 11.2L19 19M5 19l1.4-1.4M17.6 6.4 19 5"/></symbol>
+</defs></svg>
+
+<header class="site-header">
+  <a class="wordmark" href="#top" aria-label="Rem.log 홈">rem.log<span class="wordmark-dot">/ PORTFOLIO</span></a>
+  <nav class="desktop-nav" aria-label="주요 메뉴">
+    <a href="#projects">Projects</a><a href="#about">About me</a><a href="#process">My process</a>
+  </nav>
+  <div class="header-actions">
+    <button class="theme-toggle" type="button" aria-label="다크 모드로 전환" aria-pressed="false" hidden><svg class="icon"><use href="#moon"/></svg></button>
+    <a class="header-contact" href="#contact">함께 만들어요 <svg class="icon"><use href="#arrow-up"/></svg></a>
+    <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="mobile-menu" hidden><span></span><span></span></button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="모바일 메뉴" hidden><a href="#projects">프로젝트 <span>01</span></a><a href="#about">소개 <span>02</span></a><a href="#process">만드는 과정 <span>03</span></a><a href="#contact">연락처 <span>04</span></a></nav>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="hero-heading">
+
+    <div class="hero-content">
+      <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> INDEPENDENT MIND. HANDS-ON MAKER.</p>
+      <h1 id="hero-heading">Curiosity,<br><span>made real.</span></h1>
+      <p class="hero-description">작은 아이디어를, 쓸모 있는 것으로.<br>직접 만들고 탐구하며 배우는 개발자 <strong>Rem</strong>입니다.</p>
+      <div class="hero-actions"><a class="button button-accent" href="#projects">프로젝트 둘러보기 <svg class="icon"><use href="#arrow"/></svg></a><a class="button button-outline" href="#about">조금 더 알아보기</a></div>
+      <a class="hero-github" href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer">계속 만들어 가는 중. <span>GitHub <svg class="icon"><use href="#arrow-up"/></svg></span></a>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="art-workshop-head"><span>THE IDEA WORKSHOP</span><span>EXPERIMENT / 001</span></div><svg class="flight-trail" viewBox="0 0 500 450" fill="none"><path d="M-20 330C130 280 150 425 230 348S70 242 106 182 270 174 318 110" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 7"/></svg><img class="hero-plane" src="assets/paper-plane.svg" width="520" height="420" alt=""><div class="idea-note"><span>A WORK IN PROGRESS</span><strong>시작은 작은<br>호기심 하나.</strong><span class="note-arrow">↗</span></div><span class="workshop-label">THINK IT.<br>MAKE IT FLY.</span><span class="art-coordinate">37° N / ALWAYS EXPLORING</span></div>
+    <a class="scroll-note" href="#projects"><span>SCROLL TO EXPLORE</span><span aria-hidden="true">↓</span></a>
+    <span class="hero-side-note" aria-hidden="true">LESS TALKING, MORE MAKING.</span>
+  </section>
+
+  <div class="interest-strip" aria-label="관심 분야"><span>WEB DEVELOPMENT</span><span aria-hidden="true">↗</span><span>MOBILE APPS</span><span aria-hidden="true">↗</span><span>AI & SECURITY</span><span aria-hidden="true">↗</span><span>ALWAYS CURIOUS</span><span aria-hidden="true">↗</span></div>
+
+  <section class="projects section-shell" id="projects" aria-labelledby="projects-heading">
+    <div class="section-topline"><p class="eyebrow">01 / SELECTED WORK</p><span class="small-note">BUILT TO BE USED.</span></div>
+    <div class="section-intro"><h2 id="projects-heading">조금씩 만들고,<br>세상에 꺼내놓기.</h2><p>학교생활을 돕는 앱부터 개발자를 위한 도구까지.<br>궁금했던 것들을 직접 만들어 본 기록입니다.</p></div>
+    <div class="filter-bar" hidden><div class="filters" role="group" aria-label="프로젝트 분야"><button type="button" class="filter active" data-filter="all" aria-pressed="true">전체 <span>4</span></button><button type="button" class="filter" data-filter="app" aria-pressed="false">앱</button><button type="button" class="filter" data-filter="ai" aria-pressed="false">AI</button><button type="button" class="filter" data-filter="tool" aria-pressed="false">개발 도구</button></div><p class="filter-count" role="status" aria-live="polite">4개의 프로젝트</p></div>
+
+    <div class="project-grid">
+      <article class="project-card" data-category="app" data-project="ghas">
+        <div class="project-visual art-ghas" aria-hidden="true"><span class="art-label">A LITTLE EASIER, EVERY DAY.</span><div class="school-card"><div class="school-bar"><span>GHAS</span><span class="school-spark">✳</span></div><div class="school-inner"><span class="school-small">학교생활을 한눈에</span><span class="school-title">오늘도,<br>좋은 하루.</span><div class="school-bottom"><span>급식</span><span>시간표</span><span>학교 소식</span></div></div></div><span class="art-sticker sticker-yellow">Made for<br>students.</span><span class="visual-caption">GHAS 알리미 · 그래픽 프리뷰</span></div>
+        <div class="project-info"><div class="project-meta"><span>MOBILE APP</span><span>01</span></div><h3>학교생활의 작은 도우미.</h3><p>급식과 시간표를 한곳에서 확인하는<br>경기자동차과학고 학생들을 위한 GHAS 알리미.</p><ul class="tags" aria-label="GHAS 알리미 분야"><li>Android</li><li>iOS</li><li>NEIS API</li></ul></div>
+        <div class="project-footer"><a href="https://play.google.com/store/apps/details?id=kr.hs.ghas.ghason" target="_blank" rel="noreferrer">GHAS 알리미 <svg class="icon"><use href="#arrow-up"/></svg></a><button class="detail-button" data-detail="ghas" aria-label="GHAS 알리미 자세히 보기" hidden><svg class="icon"><use href="#arrow"/></svg></button></div>
+      </article>
+
+      <article class="project-card" data-category="tool" data-project="linux">
+        <div class="project-visual art-linux" aria-hidden="true"><span class="art-label">A SPACE TO MAKE YOUR OWN.</span><div class="linux-terminal"><div class="terminal-bar"><span class="terminal-dots"><i></i><i></i><i></i></span><span>lhLinux — ~</span><span>↗</span></div><div class="terminal-body"><span class="terminal-welcome">hello,<br>world<span class="terminal-period">_</span></span><span class="terminal-command"><b>~ $</b> make something great</span><span class="terminal-comment">Your terminal. Your possibilities.</span></div></div><span class="linux-orbit" aria-hidden="true">↗</span><span class="visual-caption">lhLinux · 그래픽 프리뷰</span></div>
+        <div class="project-info"><div class="project-meta"><span>OPEN SOURCE / LINUX</span><span>02</span></div><h3>나만의 환경, 나만의 가능성.</h3><p>Ubuntu 24.04 LTS 기반의 오픈소스 WSL2 CLI 배포판.<br>직접 설치하고, 함께 개선하는 개발 환경입니다.</p><ul class="tags" aria-label="lhLinux 분야"><li>Ubuntu</li><li>WSL2</li><li>Open source</li></ul></div>
+        <div class="project-footer"><a href="https://github.com/rem0116kjh/lhlinux" target="_blank" rel="noreferrer">lhLinux <svg class="icon"><use href="#arrow-up"/></svg></a><button class="detail-button" data-detail="linux" aria-label="lhLinux 자세히 보기" hidden><svg class="icon"><use href="#arrow"/></svg></button></div>
+      </article>
+
+      <article class="project-card" data-category="ai" data-project="gcpt">
+        <div class="project-visual art-ai" aria-hidden="true"><span class="art-label">BETTER QUESTIONS. DIFFERENT PERSPECTIVES.</span><div class="chat chat-one"><span>GPT</span><b>What if…</b><i>● ● ●</i></div><div class="chat chat-two"><span>Claude</span><b>Let's think.</b><i>✳</i></div><div class="chat chat-three"><span>Gemini</span><b>And then?</b><i>↗</i></div><span class="visual-caption">GCPT · 그래픽 프리뷰</span></div>
+        <div class="project-info"><div class="project-meta"><span>AI / COLLABORATION</span><span>03</span></div><h3>다른 생각이 만나는 곳.</h3><p>GPT, Claude, Gemini의 토론과 추론 흐름을 시각화하는<br>협업 프로젝트. 디자인과 일부 기능 구현에 참여했습니다.</p><ul class="tags" aria-label="GCPT 분야"><li>AI Debate</li><li>Visualization</li><li>Collaboration</li></ul></div>
+        <div class="project-footer"><a href="https://github.com/cksdud32/gcpt" target="_blank" rel="noreferrer">GCPT <svg class="icon"><use href="#arrow-up"/></svg></a><button class="detail-button" data-detail="gcpt" aria-label="GCPT 자세히 보기" hidden><svg class="icon"><use href="#arrow"/></svg></button></div>
+      </article>
+
+      <article class="project-card" data-category="tool ai" data-project="suffice">
+        <div class="project-visual art-suffice" aria-hidden="true"><span class="art-label">A LITTLE CONTEXT GOES A LONG WAY.</span><div class="context-paper paper-back"></div><div class="context-paper paper-front"><span class="paper-heading">SufficePatch <b>↗</b></span><span class="paper-code">{ context }</span><div class="paper-row"><i></i><span>Source & instructions</span><b>✓</b></div><div class="paper-row"><i></i><span>Dependencies & tests</span><b>✓</b></div><div class="paper-row"><i></i><span>Changes that matter</span><b>✓</b></div></div><span class="art-sticker sticker-green">Context<br>before code.</span><span class="visual-caption">SufficePatch · 그래픽 프리뷰</span></div>
+        <div class="project-info"><div class="project-meta"><span>DEVELOPER TOOL / AI</span><span>04</span></div><h3>좋은 수정은, 맥락에서.</h3><p>AI 코딩 에이전트가 수정 전에 필요한 소스와 지침,<br>의존성, 테스트 후보와 Git 변경을 모으는 스킬입니다.</p><ul class="tags" aria-label="SufficePatch 분야"><li>Python</li><li>Codex</li><li>Claude Code</li></ul></div>
+        <div class="project-footer"><a href="https://github.com/rem0116kjh/suffice-patch" target="_blank" rel="noreferrer">SufficePatch <svg class="icon"><use href="#arrow-up"/></svg></a><button class="detail-button" data-detail="suffice" aria-label="SufficePatch 자세히 보기" hidden><svg class="icon"><use href="#arrow"/></svg></button></div>
+      </article>
+    </div>
+    <a class="all-projects" href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer">아직 더 많은 이야기가 있어요. <span>GitHub에서 모두 보기 <svg class="icon"><use href="#arrow-up"/></svg></span></a>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-heading">
+    <div class="about-art"><p class="eyebrow">02 / A LITTLE ABOUT ME</p><h2 id="about-heading">호기심이<br>출발점<span>!</span></h2><div class="about-illustration" aria-hidden="true"><div class="maker-note"><span>THE MAKER’S NOTE</span><b>Think.<br>Make.<br>Repeat.</b><i>↗</i></div><img src="assets/paper-plane.svg" width="520" height="420" alt=""><span class="about-tag tag-one">Stay curious.</span><span class="about-tag tag-two">Keep making.</span></div><p class="about-art-note">STILL LEARNING. ALWAYS MAKING.</p></div>
+    <div class="about-content"><span class="eyebrow">HELLO, I'M REM.</span><h3>만들고, 탐구하고,<br>배웁니다.</h3><p>안녕하세요. 생활 속 작은 불편을 코드로 해결하는 학생 개발자 김진형입니다. 웹부터 AI, 로봇, 보안까지 궁금한 것을 직접 프로젝트로 만들어 봅니다.</p><p>누군가에게 쓸모 있는 도구를 만들고, 새로운 것을 배우고, 그 과정에서 발견한 것들을 나눕니다.</p><div class="skill-list"><details open><summary>웹 & 앱 개발 <span aria-hidden="true">+</span></summary><p>Python · JavaScript · TypeScript · React · Jetpack Compose</p></details><details><summary>백엔드 & 개발 환경 <span aria-hidden="true">+</span></summary><p>FastAPI · Node.js · Firebase · Docker · GitHub</p></details><details><summary>보안 & AI 탐구 <span aria-hidden="true">+</span></summary><p>Ghidra · AI & ML · Robotics · CTF</p></details></div><a class="text-link" href="https://velog.io/@luka0116kjh/posts" target="_blank" rel="noreferrer">배운 것들을 글로 남깁니다 <svg class="icon"><use href="#arrow-up"/></svg></a></div>
+  </section>
+
+  <section class="process section-shell" id="process" aria-labelledby="process-heading"><div class="section-topline"><p class="eyebrow">03 / HOW I MAKE THINGS</p><span class="small-note">ONE SMALL STEP AT A TIME.</span></div><div class="section-intro"><h2 id="process-heading">거창한 시작보다,<br>작은 한 걸음.</h2><p>좋은 아이디어는 일상 가까이에 있다고 믿습니다.<br>발견하고, 직접 만들고, 다시 배웁니다.</p></div><ol class="process-steps"><li><span class="step-number">01</span><div><h3>이건 왜 불편할까?</h3><p>일상에서 그냥 지나쳤던 불편을 관찰하고,<br>정말 필요한 것이 무엇인지 생각합니다.</p></div><span class="step-symbol" aria-hidden="true">?</span></li><li><span class="step-number">02</span><div><h3>일단, 만들어 보기.</h3><p>작게 시작해 직접 움직이는 결과물을 만듭니다.<br>모르는 것은 만들면서 배워 나갑니다.</p></div><span class="step-symbol" aria-hidden="true">↗</span></li><li><span class="step-number">03</span><div><h3>써 보고, 더 낫게.</h3><p>실제로 써 보고 부족한 부분을 고칩니다.<br>시도와 배움을 다음 프로젝트에 담습니다.</p></div><span class="step-symbol" aria-hidden="true">↻</span></li></ol></section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-heading"><div class="contact-inner"><p class="eyebrow">04 / YOUR IDEA, OUR NEXT CHAPTER</p><div class="contact-title-row"><h2 id="contact-heading">다음 아이디어는,<br>함께 만들어요.</h2><a class="contact-arrow" href="mailto:kjh08116@naver.com" aria-label="Rem에게 이메일 보내기"><svg class="icon"><use href="#arrow-up"/></svg></a></div><div class="contact-bottom"><p>새로운 프로젝트, 개발 이야기, 가벼운 인사까지.<br>어떤 이야기든 반갑게 기다릴게요.</p><div class="email-row"><a href="mailto:kjh08116@naver.com">kjh08116@naver.com</a><button class="copy-email" type="button" aria-label="이메일 주소 복사" hidden><svg class="icon" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></svg></button></div></div></div></section>
+</main>
+
+<footer class="site-footer"><div class="footer-top"><p>좋아하는 것을 만들며, 나만의 길을.</p><div><a href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer">GitHub <svg class="icon"><use href="#arrow-up"/></svg></a><a href="https://velog.io/@luka0116kjh/posts" target="_blank" rel="noreferrer">Velog <svg class="icon"><use href="#arrow-up"/></svg></a><a href="#top">Back to top ↑</a></div></div><a href="#top" class="footer-wordmark" aria-label="맨 위로">rem.log<span>2026</span></a><div class="footer-bottom"><span>© 2026 REM. MADE WITH CURIOSITY.</span><span>SMALL IDEAS. OPEN POSSIBILITIES.</span></div></footer>
+
+<dialog class="project-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><span class="eyebrow" id="dialog-category"></span><button class="dialog-close" type="button" aria-label="프로젝트 상세 닫기" autofocus><svg class="icon"><use href="#close"/></svg></button></div><p class="dialog-name" id="dialog-name"></p><h2 id="dialog-title"></h2><p class="dialog-description" id="dialog-description"></p><dl class="dialog-facts" id="dialog-facts"></dl><div class="dialog-links" id="dialog-links"></div><p class="dialog-note">프로젝트의 자세한 내용은 연결된 페이지에서 확인할 수 있습니다.</p></dialog>
+<div class="toast" role="status" aria-live="polite"></div>
+<noscript><style>.desktop-nav{display:flex}.header-actions .header-contact{display:inline-flex}@media(max-width:600px){.desktop-nav{gap:12px;font-size:11px}.desktop-nav a:last-child{display:none}.header-actions{display:none}}</style></noscript>
+</body>
+</html>

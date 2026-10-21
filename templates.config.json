@@ -19,6 +19,47 @@
       "new": true
     },
     {
+      "id": "junho",
+      "name": "phone",
+      "folder": "phone",
+      "category": "A WORLD INSIDE AN IPHONE",
+      "description": "Jin-hyung Kim의 프로젝트·대회·활동을 연결한 아이폰 포트폴리오.",
+      "tags": [
+        "IPHONE",
+        "DYNAMIC ISLAND",
+        "DARK",
+        "BLOG",
+        "RESPONSIVE",
+        "PHONE",
+        "포트폴리오"
+      ],
+      "fallback": "assets/template-placeholder.svg",
+      "new": true
+    },
+    {
+      "id": "gumroad",
+      "name": "비행기",
+      "folder": "검로드",
+      "category": "CURIOSITY, MADE REAL",
+      "description": "차콜 배경에 네온 라임과 민트를 조화롭게 담은 메이커 포트폴리오.",
+      "tags": [
+        "PAPER PLANE",
+        "NEON LIME",
+        "RESPONSIVE",
+        "PORTFOLIO",
+        "비행기",
+        "종이비행기",
+        "검로드",
+        "GUMROAD INSPIRED",
+        "포트폴리오",
+        "네온",
+        "MINT",
+        "CHARCOAL"
+      ],
+      "fallback": "assets/template-placeholder.svg",
+      "new": true
+    },
+    {
       "id": "l",
       "name": "L",
       "folder": "L",
