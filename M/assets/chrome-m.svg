@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 680" fill="none">
+<defs>
+ <linearGradient id="face" x1="70" y1="120" x2="655" y2="585" gradientUnits="userSpaceOnUse"><stop stop-color="#f4f4f4"/><stop offset=".13" stop-color="#707177"/><stop offset=".29" stop-color="#15161b"/><stop offset=".42" stop-color="#747780"/><stop offset=".53" stop-color="#222328"/><stop offset=".68" stop-color="#08090d"/><stop offset=".84" stop-color="#656870"/><stop offset="1" stop-color="#e6e7eb"/></linearGradient>
+ <linearGradient id="side" x1="200" y1="70" x2="520" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#fafafa"/><stop offset=".12" stop-color="#35363a"/><stop offset=".4" stop-color="#08090c"/><stop offset=".7" stop-color="#bbbcc2"/><stop offset="1" stop-color="#15161a"/></linearGradient>
+ <linearGradient id="bevel" x1="90" y1="170" x2="660" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".2" stop-color="#a2a3a8"/><stop offset=".34" stop-color="#121216"/><stop offset=".46" stop-color="#fff"/><stop offset=".55" stop-color="#9b9ca2"/><stop offset=".7" stop-color="#1b1c20"/><stop offset=".84" stop-color="#fff"/><stop offset="1" stop-color="#7d7f86"/></linearGradient>
+ <linearGradient id="highlight" x1="100" y1="110" x2="490" y2="580" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/><stop offset=".8" stop-color="#fff" stop-opacity=".65"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <linearGradient id="reflection" x1="150" y1="100" x2="580" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".8"/><stop offset=".35" stop-color="#fff" stop-opacity="0"/><stop offset=".66" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity=".35"/></linearGradient>
+ <path id="m" d="M112 518V134L195 104L348 322L504 104L588 134V518L504 550V287L348 492L195 287V550Z"/>
+ <clipPath id="clip"><use href="#m"/></clipPath>
+ <filter id="blur"><feGaussianBlur stdDeviation="9"/></filter>
+</defs>
+<use href="#m" transform="translate(27 -26)" fill="url(#side)" stroke="#a2a3a8" stroke-width="3"/>
+<path d="m112 134 27-26 83-30-27 26Zm83-30 27-26 153 218-27 26Zm153 218 27-26L531 78l-27 26Zm156-218 27-26 84 30-27 26Zm84 30 27-26v384l-27 26ZM195 550l27-26V306l-27-19Zm153-58 27-26 129-179v-26Z" fill="url(#bevel)" stroke="#b6b7bd" stroke-opacity=".5" stroke-width="1"/>
+<use href="#m" fill="url(#face)" stroke="url(#bevel)" stroke-width="11" stroke-linejoin="bevel"/>
+<g clip-path="url(#clip)"><path d="M160 46v620M185 40v620M498 34v620" stroke="#fff" stroke-width="6" opacity=".2" filter="url(#blur)"/><path d="m-20 280 750-175v75L-20 355Z" fill="url(#reflection)" opacity=".3"/><path d="m40 540 650-170v130L40 670Z" fill="url(#reflection)" opacity=".25"/><text x="105" y="210" fill="#fff" font-family="Arial,sans-serif" font-size="120" letter-spacing="-9" opacity=".09" filter="url(#blur)">CREATE</text></g>
+<path d="M116 515V136l77-28 154 221L504 109l79 28M199 543V289M508 541V286" stroke="url(#highlight)" stroke-width="2"/>
+</svg>

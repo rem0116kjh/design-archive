@@ -1,6 +1,23 @@
 {
   "templates": [
     {
+      "id": "m",
+      "name": "M",
+      "folder": "M",
+      "category": "MAKE IT MATTER",
+      "description": "큰 타이포그래피와 금속 조형물로 펼치는 크리에이티브 포트폴리오.",
+      "tags": [
+        "EDITORIAL",
+        "CHROME",
+        "RESPONSIVE",
+        "PORTFOLIO",
+        "MAKERVIL",
+        "포트폴리오"
+      ],
+      "fallback": "assets/template-placeholder.svg",
+      "new": true
+    },
+    {
       "id": "rem",
       "name": "렘",
       "folder": "렘",
