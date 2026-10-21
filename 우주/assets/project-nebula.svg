@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs><radialGradient id="bg"><stop stop-color="#19263a"/><stop offset="1" stop-color="#090e18"/></radialGradient><radialGradient id="sun"><stop stop-color="#f5e6c4"/><stop offset=".4" stop-color="#c6a36b"/><stop offset=".85" stop-color="#796448"/><stop offset="1" stop-color="#55432f"/></radialGradient><radialGradient id="planet" cx=".28" cy=".22"><stop stop-color="#9dbcd3"/><stop offset=".3" stop-color="#4d728b"/><stop offset=".65" stop-color="#21394f"/><stop offset="1" stop-color="#08101d"/></radialGradient><radialGradient id="glow"><stop stop-color="#bba77d" stop-opacity=".16"/><stop offset="1" stop-color="#bba77d" stop-opacity="0"/></radialGradient></defs>
+  <rect width="800" height="600" fill="url(#bg)"/><circle cx="377" cy="282" r="230" fill="url(#glow)"/>
+  <g fill="none" stroke="#adc4e3" stroke-opacity=".21"><ellipse cx="377" cy="282" rx="112" ry="43" transform="rotate(-24 377 282)"/><ellipse cx="377" cy="282" rx="188" ry="80" transform="rotate(-24 377 282)"/><ellipse cx="377" cy="282" rx="273" ry="122" transform="rotate(-24 377 282)"/><ellipse cx="377" cy="282" rx="358" ry="168" transform="rotate(-24 377 282)"/></g>
+  <circle cx="377" cy="282" r="45" fill="url(#sun)"/>
+  <circle cx="460" cy="227" r="8" fill="#aba092"/><circle cx="220" cy="308" r="13" fill="#b9a58a"/>
+  <circle cx="574" cy="180" r="42" fill="url(#planet)"/><path d="M543 152a42 42 0 0 1 54-7" fill="none" stroke="#b0d4f1" stroke-opacity=".5"/>
+  <circle cx="106" cy="428" r="20" fill="#5b4a40"/>
+  <g fill="#a5b7cf" font-family="sans-serif"><text x="522" y="120" font-size="9" letter-spacing="2">A WORLD OF WHAT IF.</text><text x="265" y="468" font-size="33" letter-spacing="-1" fill="#e0e7f1">Nebula Notes</text><text x="258" y="493" font-size="9" letter-spacing="2">COLLECT IDEAS. MAKE NEW CONNECTIONS.</text></g>
+  <g fill="#c3d4e9"><circle cx="152" cy="127" r="1"/><circle cx="690" cy="329" r="1"/><circle cx="398" cy="82" r="1"/><circle cx="598" cy="484" r="1.4"/><circle cx="220" cy="210" r=".8"/></g>
+</svg>

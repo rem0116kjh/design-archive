@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs><radialGradient id="bg"><stop stop-color="#234051"/><stop offset="1" stop-color="#0b1420"/></radialGradient><linearGradient id="panel" x2="1" y2="1"><stop stop-color="#263849"/><stop offset="1" stop-color="#111d2d"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <g fill="none" stroke="#b0d5ed" stroke-opacity=".12"><ellipse cx="400" cy="300" rx="340" ry="110" transform="rotate(-25 400 300)"/><circle cx="400" cy="300" r="210"/></g>
+  <g transform="translate(109 140) rotate(-8 290 160)">
+    <rect x="10" y="15" width="580" height="325" rx="12" fill="#040a12" opacity=".5"/><rect width="580" height="325" rx="12" fill="url(#panel)" stroke="#8aadc8" stroke-opacity=".3"/>
+    <rect x="0" width="116" height="325" rx="12" fill="#111d2b"/><text x="21" y="35" fill="#e0edf5" font-size="14" font-family="sans-serif" letter-spacing="2">NOVA.</text>
+    <g fill="#4c6279"><rect x="21" y="67" width="71" height="5" rx="2"/><rect x="21" y="90" width="55" height="5" rx="2"/><rect x="21" y="113" width="64" height="5" rx="2"/></g>
+    <text x="140" y="40" fill="#e4edf6" font-family="sans-serif" font-size="17">A little more clarity.</text><text x="140" y="62" fill="#8b9db0" font-family="sans-serif" font-size="9">YOUR IDEAS, CONNECTED.</text>
+    <g fill="#1b2b3d" stroke="#819bb4" stroke-opacity=".2"><rect x="139" y="84" width="128" height="67" rx="6"/><rect x="279" y="84" width="128" height="67" rx="6"/><rect x="419" y="84" width="135" height="67" rx="6"/><rect x="139" y="166" width="271" height="128" rx="6"/><rect x="425" y="166" width="129" height="128" rx="6"/></g>
+    <g fill="#b4cadc" font-family="sans-serif" font-size="10"><text x="154" y="107">IMAGINE</text><text x="294" y="107">CREATE</text><text x="434" y="107">EXPLORE</text></g>
+    <g stroke="#a3c8e2" stroke-width="3" fill="none"><path d="m155 263 37-19 32 6 39-29 30 10 33-38 37 12 30-16"/><circle cx="489" cy="228" r="32" stroke-width="10" stroke-opacity=".15"/><path d="M489 196a32 32 0 1 1-30 43" stroke-width="10"/></g>
+    <g fill="#92afc6"><rect x="154" y="125" width="55" height="7" rx="3"/><rect x="294" y="125" width="55" height="7" rx="3"/><rect x="434" y="125" width="55" height="7" rx="3"/></g>
+  </g>
+</svg>

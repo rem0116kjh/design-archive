@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050609">
+  <meta name="description" content="ORBIT — 회전하는 지구와 프로젝트 궤도로 구성된 무료 우주 포트폴리오 디자인 템플릿.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ORBIT — Ideas in Orbit">
+  <meta property="og:description" content="Create your own universe. 나의 이야기로 완성하는 인터랙티브 포트폴리오 템플릿.">
+  <meta property="og:image" content="preview/desktop.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="color-scheme" content="dark">
+  <title>ORBIT — Ideas in Orbit</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script src="assets/earth-textures.js" defer></script>
+  <script src="assets/universe.js" defer></script>
+  <script src="assets/scroll-story.js" defer></script>
+  <script src="script.js" defer></script>
+  <noscript>
+    <style>
+      .menu-toggle,.motion-toggle,.project-toolbar,.orbit-controls{display:none!important}
+      @media(max-width:767px){.site-header{position:relative}.header-inner{height:auto;flex-wrap:wrap;padding-block:22px;gap:20px}.main-nav{position:static;display:flex;flex-direction:row;flex-wrap:wrap;padding:0;gap:16px;box-shadow:none;border:0}.main-nav>a{font-size:12px;padding:8px 0;border:0}.main-nav .nav-number{display:none}.hero-coordinates{top:30px}}
+    </style>
+  </noscript>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+    <symbol id="icon-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 32 32"><path d="m16 0 3.7 12.3L32 16l-12.3 3.7L16 32l-3.7-12.3L0 16l12.3-3.7Z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="icon-github" viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2-5-2.5M15 22v-3.4c0-1 .1-1.7-.5-2.3 3.3-.4 6.8-1.6 6.8-7.3a5.7 5.7 0 0 0-1.5-4c.1-.4.6-1.9-.2-3.9 0 0-1.3-.4-4.2 1.5a14 14 0 0 0-7.6 0C4.9.7 3.6 1.1 3.6 1.1c-.8 2-.3 3.5-.2 3.9a5.7 5.7 0 0 0-1.5 4c0 5.7 3.5 6.9 6.8 7.3-.5.5-.7 1.2-.7 2.3V22" transform="translate(1 0) scale(.9)"/></symbol>
+    <symbol id="icon-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="icon-motion" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="5" transform="rotate(-40 12 12)"/><path d="m17 3 2 2M4 18l2 2"/></symbol>
+  </svg>
+
+  <header class="site-header" id="site-header">
+    <div class="header-inner shell">
+      <!-- TEMPLATE: 브랜드와 연락처는 script.js의 TEMPLATE에서 변경합니다. -->
+      <a href="#home" class="wordmark" data-brand-home aria-label="ORBIT 홈"><svg><use href="#icon-star"/></svg><span data-brand>ORBIT</span><span class="wordmark-dot">.</span></a>
+      <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+        <a href="#home" aria-current="page"><span class="nav-number">01</span> Home</a>
+        <a href="#about"><span class="nav-number">02</span> About</a>
+        <a href="#projects"><span class="nav-number">03</span> Projects</a>
+        <a href="#experience"><span class="nav-number">04</span> Journey</a>
+        <a href="#contact" class="mobile-contact"><span class="nav-number">05</span> Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="motion-toggle icon-button" type="button" aria-label="애니메이션 끄기" aria-pressed="false" title="애니메이션 끄기"><svg><use href="#icon-motion"/></svg></button>
+        <a class="header-contact" href="#contact">Let’s talk <svg><use href="#icon-arrow"/></svg></a>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="scroll-story" id="home" aria-labelledby="hero-heading">
+      <div class="hero">
+      <div class="hero-scene" aria-hidden="true"><div class="space-haze"></div><canvas id="starfield"></canvas></div>
+      <div class="hero-coordinates shell" aria-hidden="true"><span>INTERACTIVE SPACE — VOL. 03</span><span>YOUR IDEAS. YOUR UNIVERSE.</span></div>
+
+      <!-- The planet and cards share one animation loop; no framework is required. -->
+      <div class="universe-stage" tabindex="0" role="group" aria-label="회전하는 지구와 프로젝트 궤도" aria-describedby="universe-help">
+        <div class="universe-orbit orbit-back" aria-hidden="true"></div>
+        <div class="globe-shell" aria-hidden="true">
+          <div class="globe-fallback"><div class="globe-surface"></div><div class="globe-shadow"></div></div>
+          <canvas id="globe-canvas"></canvas>
+        </div>
+        <a class="orbit-card" href="#project-orbit" data-orbit-index="0" aria-label="01 / ORBIT STUDIO — 예시 프로젝트 보기"><img src="assets/project-orbit.svg" alt="" width="800" height="600"><span>01 / ORBIT STUDIO <svg><use href="#icon-arrow"/></svg></span></a>
+        <a class="orbit-card" href="#project-nebula" data-orbit-index="1" aria-label="02 / NEBULA NOTES — 예시 프로젝트 보기"><img src="assets/project-nebula.svg" alt="" width="800" height="600"><span>02 / NEBULA NOTES <svg><use href="#icon-arrow"/></svg></span></a>
+        <a class="orbit-card" href="#project-nova" data-orbit-index="2" aria-label="03 / NOVA DASHBOARD — 예시 프로젝트 보기"><img src="assets/project-nova.svg" alt="" width="800" height="600"><span>03 / NOVA DASHBOARD <svg><use href="#icon-arrow"/></svg></span></a>
+        <a class="orbit-card" href="#project-atlas" data-orbit-index="3" aria-label="04 / ATLAS LAB — 예시 프로젝트 보기"><img src="assets/project-nebula.svg" alt="" width="800" height="600"><span>04 / ATLAS LAB <svg><use href="#icon-arrow"/></svg></span></a>
+        <a class="orbit-card" href="#project-signal" data-orbit-index="4" aria-label="05 / SIGNAL SPACE — 예시 프로젝트 보기"><img src="assets/project-orbit.svg" alt="" width="800" height="600"><span>05 / SIGNAL SPACE <svg><use href="#icon-arrow"/></svg></span></a>
+        <div class="orbit-controls"><button type="button" class="orbit-prev" aria-label="궤도 왼쪽으로 회전">←</button><span>DRAG TO EXPLORE</span><button type="button" class="orbit-next" aria-label="궤도 오른쪽으로 회전">→</button></div>
+        <p id="universe-help" class="sr-only">지구나 카드를 좌우로 드래그하거나 방향 버튼을 누르세요. 키보드 좌우 화살표도 사용할 수 있습니다. 모바일에서는 세로 스크롤과 가로 드래그를 구분합니다.</p>
+      </div>
+
+      <div class="hero-content shell">
+        <p class="eyebrow hero-eyebrow"><span class="status-dot"></span> A SPACE FOR YOUR NEXT IDEA</p>
+        <h1 id="hero-heading">Ideas in<br><span>orbit.</span><svg class="heading-star" aria-hidden="true"><use href="#icon-star"/></svg></h1>
+        <p class="hero-description">작은 아이디어에도, 넓은 우주가 필요하니까.<br>나만의 이야기로 채워 가는 포트폴리오.</p>
+        <a class="button button-light" href="#projects">Explore the projects <span><svg><use href="#icon-arrow"/></svg></span></a>
+        <span class="template-note">PORTFOLIO TEMPLATE · ALL CONTENT IS SAMPLE</span>
+      </div>
+      <!-- Scroll chapters use the same Earth and cards, rather than loading new scenes. -->
+      <div class="story-copy story-focus" data-story-panel="focus" aria-hidden="true" inert>
+        <p class="eyebrow">02 / EXPAND YOUR PERSPECTIVE</p>
+        <h2>Beyond the<br><span>familiar.</span></h2>
+        <p>시선을 넓히면, 새로운 가능성이 보입니다.</p>
+      </div>
+      <div class="story-copy story-projects" data-story-panel="projects" aria-hidden="true" inert>
+        <p class="eyebrow">03 / LET IDEAS TAKE FLIGHT</p>
+        <h2>Let your<br><span>ideas travel.</span></h2>
+        <p>작은 실험이 궤도를 벗어나, 하나의 경험이 될 때.</p>
+      </div>
+      <div class="story-copy story-outro" data-story-panel="outro" aria-hidden="true" inert>
+        <p class="eyebrow">04 / THE NEXT CHAPTER IS YOURS</p>
+        <h2>Your story.<br><span>Starts here.</span></h2>
+        <p>이제, 여러분의 이야기로 이 우주를 채워 주세요.</p>
+        <a class="button button-light" href="#about">Make this space yours <span><svg><use href="#icon-down"/></svg></span></a>
+      </div>
+      <div class="story-status shell">
+        <nav class="story-navigation" aria-label="우주 스크롤 장면 선택">
+          <button type="button" data-story-jump="0" aria-pressed="true"><span>01</span> <i></i> <span class="story-step-name">IN ORBIT</span><span class="sr-only"> — 첫 장면: 궤도 탐색</span></button>
+          <button type="button" data-story-jump="1" aria-pressed="false"><span>02</span> <i></i> <span class="story-step-name">A CLOSER LOOK</span><span class="sr-only"> — 두 번째 장면: 지구 확대</span></button>
+          <button type="button" data-story-jump="2" aria-pressed="false"><span>03</span> <i></i> <span class="story-step-name">IDEAS TAKE FLIGHT</span><span class="sr-only"> — 세 번째 장면: 프로젝트 펼침</span></button>
+          <button type="button" data-story-jump="3" aria-pressed="false"><span>04</span> <i></i> <span class="story-step-name">YOUR NEXT CHAPTER</span><span class="sr-only"> — 마지막 장면: 다음 이야기</span></button>
+        </nav>
+        <span class="story-percent" aria-hidden="true">000%</span>
+        <span class="sr-only story-announcement" role="status" aria-live="polite" aria-atomic="true"></span>
+      </div>
+      <div class="story-progress" aria-hidden="true"><span></span></div>
+      <div class="hero-bottom shell"><a class="scroll-cue" href="#about" data-story-next><span class="scroll-circle"><svg><use href="#icon-down"/></svg></span><span>SCROLL TO EXPLORE</span></a><div class="hero-fields"><span>DRAG</span><i></i><span>ROTATE</span><i></i><span>DISCOVER</span></div><span class="hero-page">01 <span>/ 05</span></span></div>
+      <nav class="section-dots" aria-label="섹션 바로가기"><a href="#home" class="is-active" aria-label="Home" aria-current="page"></a><a href="#about" aria-label="About"></a><a href="#projects" aria-label="Projects"></a><a href="#experience" aria-label="Journey"></a><a href="#contact" aria-label="Contact"></a></nav>
+      </div>
+    </section>
+
+    <div class="discipline-strip" aria-label="디자인 콘셉트"><div class="shell"><span>BUILT WITH CURIOSITY</span><svg aria-hidden="true"><use href="#icon-star"/></svg><span>MADE TO MAKE YOURS</span><svg aria-hidden="true"><use href="#icon-star"/></svg><span>ALWAYS IN MOTION</span><svg aria-hidden="true"><use href="#icon-star"/></svg></div></div>
+
+    <section class="about section shell" id="about" aria-labelledby="about-heading">
+      <div class="section-label reveal"><span>01 / ABOUT YOU</span><span>MAKE THIS SPACE YOURS</span></div>
+      <div class="about-grid"><div class="about-copy reveal"><h2 id="about-heading">Stay curious.<br>Keep <span class="muted">creating.</span></h2><p class="lead">이곳은 여러분을 소개하는 공간입니다.<br>어떤 문제를 풀고, 무엇을 만들고 싶나요?</p><p class="body-copy">관심 분야, 개발을 시작한 계기, 앞으로의 목표를 짧게 적어 보세요. 멋진 경력보다 나만의 시선과 만드는 과정을 담아 보세요. 아래 기술 스택도 직접 사용한 도구로 바꾸면 됩니다.</p><a class="text-link" href="#projects">Explore the sample work <svg aria-hidden="true"><use href="#icon-down"/></svg></a></div>
+        <div class="orbit-map reveal" role="img" aria-label="코드, 디자인, 호기심이 연결되는 움직이는 궤도"><div class="orbit-line orbit-line-one"></div><div class="orbit-line orbit-line-two"></div><div class="orbit-line orbit-line-three"></div><div class="orbit-satellite" aria-hidden="true"></div><div class="orbit-center"><svg aria-hidden="true"><use href="#icon-star"/></svg><span data-brand>ORBIT</span></div><div class="orbit-node node-code"><span class="node-sphere"></span><span>DEVELOPMENT<small>Build something useful</small></span></div><div class="orbit-node node-ai"><span class="node-sphere"></span><span>DESIGN<small>Make it feel right</small></span></div><div class="orbit-node node-security"><span class="node-sphere"></span><span>CURIOSITY<small>Keep asking questions</small></span></div><span class="orbit-caption">YOUR INTERESTS. CONNECTED.</span></div>
+      </div>
+      <div class="stack-row reveal"><span class="stack-label">EXAMPLE TOOLKIT</span><ul aria-label="예시 기술 스택"><li>HTML & CSS</li><li>JavaScript</li><li>Python</li><li>React</li><li>Figma</li><li>Git</li></ul></div>
+    </section>
+
+    <section class="projects section" id="projects" aria-labelledby="projects-heading"><div class="shell">
+      <div class="section-label reveal"><span>02 / PROJECT UNIVERSE</span><span>SAMPLE PROJECTS · REPLACE WITH YOUR OWN</span></div>
+      <div class="section-heading reveal"><h2 id="projects-heading">Small ideas.<br>Infinite <span class="muted">possibilities.</span></h2><p>아래는 레이아웃을 보여 주는 예시 프로젝트입니다.<br>여러분이 만든 작품과 이야기로 바꿔 주세요.</p></div>
+      <div class="project-toolbar reveal"><div class="project-filters" role="group" aria-label="프로젝트 분야 필터"><button type="button" data-filter="all" aria-pressed="true">All projects <span>05</span></button><button type="button" data-filter="web" aria-pressed="false">Web</button><button type="button" data-filter="creative" aria-pressed="false">Creative</button><button type="button" data-filter="apps" aria-pressed="false">Apps</button></div><span class="project-counter" aria-live="polite" aria-atomic="true">5 PROJECTS IN ORBIT</span></div>
+      <!-- TEMPLATE: 프로젝트 카드를 복사하고 제목·설명·이미지·태그를 교체하세요. -->
+      <div class="project-grid">
+        <article class="project-card reveal" id="project-orbit" data-category="web"><a class="project-image-link" href="#project-orbit" data-project="orbit" aria-label="Orbit Studio 예시 상세 보기"><div class="project-visual"><img src="assets/project-orbit.svg" alt="푸른 행성과 코드 패널로 구성된 예시 프로젝트 그래픽" width="800" height="600" loading="lazy"><span class="visual-category">01 — CREATIVE WEB</span><span class="visual-caption">SAMPLE PROJECT</span><span class="project-visit"><svg><use href="#icon-arrow"/></svg></span></div></a><div class="project-info"><div class="project-title"><h3>Orbit Studio</h3><span>01</span></div><p>인터랙티브 웹 프로젝트를 소개하는 예시입니다. 해결한 문제와 구현한 경험을 적어 보세요.</p><ul class="tags" aria-label="예시 기술"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><div class="project-links"><a href="#project-orbit" data-project="orbit">Explore example <svg><use href="#icon-arrow"/></svg></a></div></div></article>
+        <article class="project-card reveal" id="project-nebula" data-category="creative"><a class="project-image-link" href="#project-nebula" data-project="nebula" aria-label="Nebula Notes 예시 상세 보기"><div class="project-visual"><img src="assets/project-nebula.svg" alt="태양계 궤도로 구성된 크리에이티브 예시 프로젝트 그래픽" width="800" height="600" loading="lazy"><span class="visual-category">02 — CREATIVE EXPERIMENT</span><span class="visual-caption">SAMPLE PROJECT</span><span class="project-visit"><svg><use href="#icon-arrow"/></svg></span></div></a><div class="project-info"><div class="project-title"><h3>Nebula Notes</h3><span>02</span></div><p>작은 실험도 하나의 프로젝트가 됩니다. 아이디어와 실험 과정, 배운 점을 담아 보세요.</p><ul class="tags" aria-label="예시 기술"><li>Creative Coding</li><li>Canvas</li><li>Design</li></ul><div class="project-links"><a href="#project-nebula" data-project="nebula">Explore example <svg><use href="#icon-arrow"/></svg></a></div></div></article>
+        <article class="project-card reveal" id="project-nova" data-category="apps"><a class="project-image-link" href="#project-nova" data-project="nova" aria-label="Nova Dashboard 예시 상세 보기"><div class="project-visual"><img src="assets/project-nova.svg" alt="실제 서비스가 아닌 대시보드 예시 디자인" width="800" height="600" loading="lazy"><span class="visual-category">03 — APP INTERFACE</span><span class="visual-caption">SAMPLE PROJECT</span><span class="project-visit"><svg><use href="#icon-arrow"/></svg></span></div></a><div class="project-info"><div class="project-title"><h3>Nova Dashboard</h3><span>03</span></div><p>앱이나 서비스의 주요 화면을 보여 주는 예시입니다. 나의 역할과 사용한 기술을 소개해 보세요.</p><ul class="tags" aria-label="예시 기술"><li>UI Design</li><li>Web App</li><li>Prototype</li></ul><div class="project-links"><a href="#project-nova" data-project="nova">Explore example <svg><use href="#icon-arrow"/></svg></a></div></div></article>
+        <article class="project-card project-card-compact reveal" id="project-atlas" data-category="creative"><div class="compact-visual linux-visual" aria-hidden="true"><span>04 / SAMPLE</span><code>~ $ <span>make something_</span></code><span>EXPLORE / EXPERIMENT / REPEAT</span></div><div class="project-info"><div class="project-title"><h3>Atlas Lab</h3><span>04</span></div><p>배우는 과정에서 만든 도구, 자동화, 작은 실험을 소개해 보세요.</p><ul class="tags" aria-label="예시 기술"><li>Python</li><li>Experiment</li></ul><div class="project-links"><a href="#project-atlas" data-project="atlas">Explore example <svg><use href="#icon-arrow"/></svg></a></div></div></article>
+        <article class="project-card project-card-compact reveal" id="project-signal" data-category="web"><div class="compact-visual flow-visual" aria-hidden="true"><span>05 / SAMPLE</span><div><b>IDEA</b><i>↔</i><b>CODE</b><i>↔</i><b>CREATE</b></div><span>A SMALL IDEA. A NEW CONNECTION.</span></div><div class="project-info"><div class="project-title"><h3>Signal Space</h3><span>05</span></div><p>개인 작업이나 팀 프로젝트를 소개하는 자리입니다. 기여한 부분을 구체적으로 적어 보세요.</p><ul class="tags" aria-label="예시 기술"><li>Web</li><li>Interaction</li><li>Collaboration</li></ul><div class="project-links"><a href="#project-signal" data-project="signal">Explore example <svg><use href="#icon-arrow"/></svg></a></div></div></article>
+      </div>
+      <div class="projects-end reveal"><span>YOUR NEXT PROJECT BELONGS HERE.</span><a class="text-link" href="#contact">Make a new connection <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a></div>
+    </div></section>
+
+    <section class="experience section shell" id="experience" aria-labelledby="experience-heading"><div class="section-label reveal"><span>03 / YOUR JOURNEY</span><span>EXAMPLE TIMELINE</span></div><div class="experience-grid"><div class="experience-intro reveal"><h2 id="experience-heading">Every step,<br>a new <span class="muted">frontier.</span></h2><p class="body-copy">나만의 배움과 도전으로 채워 주세요.<br>아래 내용은 작성 방법을 안내하는 예시입니다.</p><span class="flight-log-mark" aria-hidden="true"><svg><use href="#icon-star"/></svg> YOUR STORY STARTS HERE</span></div><ol class="timeline">
+      <li class="reveal"><div class="timeline-meta"><span>YYYY.MM</span><span>BUILD</span></div><h3>첫 번째 프로젝트</h3><p>무엇을 만들었는지, 어떤 역할을 맡았는지 소개해 보세요.</p><span class="timeline-result">프로젝트 예시</span></li>
+      <li class="reveal"><div class="timeline-meta"><span>YYYY.MM</span><span>CHALLENGE</span></div><h3>새로운 도전</h3><p>실제로 참여한 대회, 해커톤, 동아리 활동을 적어 보세요. 수상·순위는 확인된 경우에만 추가하세요.</p><span class="timeline-result">활동 예시</span></li>
+      <li class="reveal"><div class="timeline-meta"><span>YYYY.MM</span><span>LEARN</span></div><h3>배우고 연결하기</h3><p>공부한 기술과 적용한 경험, 앞으로 더 탐구하고 싶은 주제를 적어 보세요.</p><span class="timeline-result">학습 예시</span></li>
+    </ol></div></section>
+
+    <section class="contact section" id="contact" aria-labelledby="contact-heading"><div class="contact-orbit" aria-hidden="true"></div><div class="shell contact-inner"><div class="section-label reveal"><span>04 / MAKE CONTACT</span><span>THE NEXT CHAPTER STARTS HERE</span></div><div class="contact-content reveal"><span class="contact-kicker"><span class="status-dot"></span> GOOD IDEAS TRAVEL FURTHER TOGETHER</span><h2 id="contact-heading">Let’s explore<br><span class="muted">together.</span><svg aria-hidden="true"><use href="#icon-star"/></svg></h2><p>다음 아이디어가 시작되는 곳.<br>아래 예시 주소를 나의 연락처로 바꿔 주세요.</p><div class="contact-email"><a data-email href="mailto:hello@example.com"><span data-email-text>hello@example.com</span> <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a><button class="icon-button copy-email" aria-label="예시 이메일 주소 복사" type="button"><svg><use href="#icon-copy"/></svg></button></div><div class="contact-socials"><a data-github href="https://github.com/" target="_blank" rel="noopener noreferrer"><svg><use href="#icon-github"/></svg> GitHub <svg aria-label="새 탭"><use href="#icon-arrow"/></svg></a><span class="contact-sample-label">EXAMPLE CONTACT</span></div></div></div></section>
+  </main>
+
+  <footer class="site-footer shell"><a href="#home" class="wordmark" data-brand-home aria-label="ORBIT 홈"><svg><use href="#icon-star"/></svg><span data-brand>ORBIT</span><span class="wordmark-dot">.</span></a><p>© <span id="current-year">2026</span> <span data-brand>ORBIT</span>. A template for your universe.</p><a href="#home" class="back-top">BACK TO TOP <svg aria-hidden="true"><use href="#icon-arrow"/></svg></a></footer>
+  <div class="asset-credit shell">Earth textures: <a href="https://play.solarsystemscope.com/textures/" target="_blank" rel="noopener noreferrer">Solar System Scope</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a></div>
+
+  <dialog class="project-dialog" aria-labelledby="dialog-title"><button type="button" class="dialog-close icon-button" aria-label="상세 보기 닫기">×</button><img class="dialog-image" src="assets/project-orbit.svg" alt="예시 프로젝트 그래픽" width="800" height="600"><div class="dialog-body"><span class="eyebrow">TEMPLATE SAMPLE / REPLACE WITH YOUR WORK</span><h2 id="dialog-title">Orbit Studio</h2><p class="dialog-description"></p><ul class="dialog-tags tags" aria-label="예시 기술"></ul><p class="dialog-note">이 프로젝트는 디자인을 보여 주는 예시입니다. 실제 프로젝트의 화면, 역할, 구현 과정과 결과로 교체해 주세요.</p><a href="https://example.com/" target="_blank" rel="noopener noreferrer" class="text-link">Example link <svg aria-label="새 탭"><use href="#icon-arrow"/></svg></a></div></dialog>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

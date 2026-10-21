@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 430" fill="none">
+<defs><linearGradient id="edge" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#fcfaff"/><stop offset="1" stop-color="#aaa4be"/></linearGradient><filter id="ds"><feDropShadow dx="5" dy="16" stdDeviation="9" flood-opacity=".18"/></filter></defs>
+<g transform="translate(35 5) rotate(-9 310 210)" stroke="#171123" stroke-width="6" stroke-linejoin="round" filter="url(#ds)">
+<path d="M158 50c1-11 10-18 21-17l344 21c11 1 18 10 17 21l-19 228-380-24z" fill="url(#edge)"/>
+<path d="m175 55 344 21-16 201-345-21z" fill="#19151f"/>
+<path d="m141 279 380 24-88 72L42 345z" fill="url(#edge)"/>
+<path d="m42 345 391 30-2 14L45 359z" fill="#c0b8d2"/>
+<path d="m176 292 301 20-42 35-303-23z" fill="#4e455d" stroke-width="3"/>
+<path d="m237 335 86 6-15 17-89-7z" fill="#d3cbe2" stroke-width="2"/>
+<path d="m186 307 272 18m-253-30-30 31m69-28-30 32m69-30-30 32m69-29-30 31m69-29-30 32m69-29-30 31" stroke="#bcb2cf" stroke-width="3"/>
+<g stroke="none" transform="matrix(1 .062 -.08 1 188 83)">
+<circle cx="3" cy="3" r="3" fill="#f07c96"/><circle cx="15" cy="3" r="3" fill="#fff323"/><circle cx="27" cy="3" r="3" fill="#12dd24"/>
+<text x="260" y="8" font-family="monospace" font-size="9" fill="#bbb0c9">rem.dev</text>
+<text x="13" y="49" font-family="monospace" font-size="11" fill="#12dd24">HELLO, WORLD_</text>
+<text x="10" y="96" font-family="Arial,sans-serif" font-weight="900" font-size="54" fill="#fff323">I BUILD</text>
+<text x="10" y="145" font-family="Arial,sans-serif" font-weight="900" font-size="54" fill="#fff">THINGS.</text>
+<rect x="14" y="160" width="97" height="5" rx="2" fill="#6a00ef"/>
+<rect x="118" y="160" width="48" height="5" rx="2" fill="#12dd24"/>
+</g>
+<circle cx="486" cy="302" r="36" fill="#fff323"/>
+<path d="m470 302 11 12 19-23" stroke-width="7" stroke-linecap="round"/>
+</g></svg>

@@ -1,0 +1,71 @@
+{
+  "templates": [
+    {
+      "id": "antigravity",
+      "name": "구글",
+      "aliases": [
+        "antigravity",
+        "안티그래비티",
+        "안티그라비티"
+      ],
+      "category": "THINK BEYOND",
+      "description": "여백과 푸른 입자로 담아낸 새로운 가능성.",
+      "tags": [
+        "MINIMAL",
+        "PARTICLES",
+        "RESPONSIVE"
+      ],
+      "fallback": "assets/antigravity-preview.svg",
+      "expected": true,
+      "new": true,
+      "cover": "preview/antigravity.png",
+      "folder": "구글"
+    },
+    {
+      "id": "apple",
+      "name": "애플",
+      "folder": "애플",
+      "category": "A DESKTOP OF YOUR OWN",
+      "description": "나의 이야기를 담은 작은 데스크톱.",
+      "tags": [
+        "DESKTOP UI",
+        "THEME EDITOR",
+        "SINGLE HTML"
+      ],
+      "fallback": "assets/template-placeholder.svg"
+    },
+    {
+      "id": "orbit",
+      "name": "우주",
+      "folder": "우주",
+      "category": "IDEAS IN ORBIT",
+      "description": "나만의 궤도에서 펼쳐지는 프로젝트.",
+      "tags": [
+        "WEBGL",
+        "SCROLL STORY",
+        "INTERACTIVE"
+      ],
+      "fallback": "assets/template-placeholder.svg"
+    },
+    {
+      "id": "pichi",
+      "name": "월드",
+      "folder": "피치월드",
+      "category": "A COLORFUL UNIVERSE",
+      "description": "과감한 컬러로 만드는 나의 세계.",
+      "tags": [
+        "VIVID COLORS",
+        "HOVER EFFECT",
+        "RESPONSIVE"
+      ],
+      "fallback": "assets/template-placeholder.svg"
+    }
+  ],
+  "excludeFolders": [
+    "pichi-portfolio",
+    "scripts",
+    "assets",
+    "preview",
+    "node_modules"
+  ]
+}
