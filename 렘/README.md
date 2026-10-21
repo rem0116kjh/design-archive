@@ -1,0 +1,32 @@
+# 렘 — 흑백 개발자 포트폴리오
+
+[참조 포트폴리오](https://rem0116kjh.github.io/portfolio-react/)의 공개된 흑백 디자인을 HTML·CSS·JavaScript로 옮긴 독립 템플릿입니다. 참조 저장소의 `ea66800` 버전과 공개 화면을 기준으로 만들었습니다.
+
+`index.html`을 더블클릭하면 한국어 페이지가 열립니다. `en.html`은 영어 페이지입니다. 설치·빌드·서버가 필요하지 않으며, 외부 폰트·라이브러리 요청 없이 실행됩니다. 외부 프로젝트 링크를 열 때는 인터넷이 필요합니다.
+
+## 내 내용으로 바꾸기
+
+1. `index.html`에서 이름, 소개, 학교, 기술, 프로젝트, 수상·활동 기록, 연락처를 직접 수정합니다. 각 구역은 `about`, `stack`, `projects`, `awards`, `activities`, `contact` ID로 찾을 수 있습니다.
+2. `en.html`에도 같은 내용을 영어로 반영합니다. 상단 EN / KO 링크로 전환하며 현재 구역을 유지합니다.
+3. 두 HTML의 마지막 `terminal-data` JSON에서 `profile`과 `skills`도 수정합니다. 터미널 초기 소개 문구는 `.terminal-entry`에서 바꿉니다.
+4. `style.css`의 `.portfolio-page`와 `.dark .portfolio-page` 색상 변수를 수정하면 라이트·다크 테마를 바꿀 수 있습니다.
+5. 폴더 전체를 복사해 공유하거나 정적 호스팅에 올립니다.
+
+프로젝트와 경력, 연락처는 참조 사이트에 공개된 Rem의 실제 콘텐츠를 보존한 것입니다. 자신의 포트폴리오로 사용할 때는 본인의 정보로 바꿔 주세요.
+
+## 기능
+
+- 다크 / 라이트 전환. `design-archive.rem.theme.v1` 키로 현재 브라우저에 테마를 저장합니다. 저장이 제한돼도 현재 탭에서 전환할 수 있습니다.
+- 수상·활동의 더 보기 / 접기와 키보드 조작.
+- 텍스트 터미널: `help`, `whoami`, `about`, `cat about.txt`, `stack`, `clear`. 위·아래 방향키로 입력 기록을 볼 수 있습니다. 실제 셸 명령은 실행하지 않습니다.
+- 320px부터 데스크톱까지 반응형 레이아웃, 바로 가기 링크, 포커스 표시, 동작 줄이기 설정 대응.
+- JavaScript를 끈 경우에도 소개·프로젝트·전체 기록과 한/영 페이지 이동은 사용할 수 있습니다.
+
+## 출처
+
+- 레이아웃·콘텐츠·터미널: [Rem 포트폴리오](https://github.com/rem0116kjh/portfolio-react), 참조 커밋 `ea66800`.
+- 인라인 아이콘: [Lucide](https://lucide.dev/), ISC 라이선스. `assets/LUCIDE-LICENSE.txt` 참조.
+- 파비콘: 참조 포트폴리오의 `public/favicon.svg`.
+- 시스템에 설치된 글꼴을 사용하며 별도 폰트 파일은 포함하지 않습니다.
+
+`preview/`는 아카이브 목록에 쓰는 실제 브라우저 미리보기입니다.

@@ -1,6 +1,23 @@
 {
   "templates": [
     {
+      "id": "rem",
+      "name": "렘",
+      "folder": "렘",
+      "category": "BUILT WITH CURIOSITY",
+      "description": "흑백의 여백과 터미널로 소개하는 개발자의 기록.",
+      "tags": [
+        "MONOCHROME",
+        "TERMINAL",
+        "BILINGUAL",
+        "PORTFOLIO",
+        "REM",
+        "포트폴리오"
+      ],
+      "fallback": "assets/template-placeholder.svg",
+      "new": true
+    },
+    {
       "id": "antigravity",
       "name": "구글",
       "aliases": [

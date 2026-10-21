@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="프로젝트와 터미널, 성장 기록을 담은 흑백 개발자 포트폴리오 HTML 템플릿.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>렘 · 개발 포트폴리오</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (() => {
+      let dark = true;
+      try { const saved = localStorage.getItem('design-archive.rem.theme.v1'); if (saved !== null) dark = saved === 'dark'; } catch {}
+      document.documentElement.classList.toggle('dark', dark);
+      document.querySelector('meta[name="theme-color"]').content = dark ? '#0a0a0a' : '#fafafa';
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Edit the profile, projects, skills, records, and contact links directly below.
+     en.html is the English edition. Update terminal-data as well when editing the introduction or skills. -->
+<div class="portfolio-page"><a class="skip-link" href="#main">본문으로 바로가기</a>
+<header class="site-header">
+<div class="portfolio-container header-inner"><a href="#top" class="site-logo" aria-label="Rem 홈"><span aria-hidden="true">◆</span> Rem</a>
+<nav aria-label="주요 메뉴"><a href="#about">소개</a><a href="#stack">기술</a><a href="#projects">프로젝트</a><a href="#contact">연락처</a>
+</nav><a class="language-toggle" href="en.html" lang="en" hreflang="en" aria-label="View in English">EN</a><button type="button" class="theme-toggle" aria-label="라이트 모드로 전환" title="라이트 모드로 전환"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>
+</div>
+</header>
+<main id="main" tabindex="-1" class="portfolio-container">
+<section id="top" class="portfolio-hero" aria-labelledby="hero-heading">
+<p class="hero-kicker">안녕하세요, 저는</p>
+<h1 id="hero-heading">Rem<span>예요.</span>
+</h1>
+<p class="hero-tagline">만들고, 탐구하고, 배웁니다<span class="hero-period">.</span>
+</p>
+<p class="hero-description">생활 속 작은 불편을 코드로 해결하는 학생 개발자 김진형입니다. <br class="desktop-break"/><strong>직접 쓸 수 있는 도구</strong>를 만들고, <strong>웹 보안과 AI</strong>를 탐구하며<br class="desktop-break"/> 배운 것들을 프로젝트와 글로 남깁니다.</p>
+<div class="hero-actions"><a href="#projects" class="primary-link">프로젝트 보기<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a><a href="#contact" class="outline-link">contact <span aria-hidden="true">→</span></a>
+</div>
+</section>
+<section id="about" aria-labelledby="about-heading" class="portfolio-section about-section">
+<div class="section-heading">
+<h2 id="about-heading">소개</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="about-intro">
+<div class="about-prose">
+<p>안녕하세요. 만들고, 부수고, 다시 배우며 성장하는 김진형입니다. 웹부터 AI, 로봇, 보안까지 궁금한 것을 직접 프로젝트로 만들어 봅니다.</p>
+<p>학교생활을 돕는 <strong>GHAS 알리미</strong>부터 오픈소스 Linux 환경, AI 토론 시각화까지. 궁금한 것을 직접 만들며 제 관심사의 범위를 넓혀가고 있습니다.</p>
+<p class="about-location">South Korea <span>·</span> UTC+9</p>
+</div>
+<dl class="about-facts">
+<div>
+<dt>학교</dt>
+<dd>경기자동차과학고등학교 3학년</dd>
+</div>
+<div>
+<dt>전공</dt>
+<dd>미래자동차과</dd>
+</div>
+<div>
+<dt>목표</dt>
+<dd>소프트웨어 엔지니어 / AI 엔지니어</dd>
+</div>
+</dl>
+</div>
+<section class="mac-desktop" aria-label="터미널로 만나는 Rem">
+<div class="mac-window mac-terminal">
+<div class="mac-window-bar">
+<div class="mac-window-dots" aria-hidden="true"><span></span><span></span><span></span>
+</div>
+<div class="mac-window-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal" aria-hidden="true"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>Rem — zsh</div><span aria-hidden="true"></span>
+</div>
+<div class="terminal-log" role="log" aria-label="터미널 출력" tabindex="0">
+<div class="terminal-entry">
+<p><span class="terminal-prompt">Rem@macbook</span> <span class="terminal-path">~ %</span> whoami</p>
+<p class="terminal-output">Rem · Programmer &amp; Builder &amp; Hacker</p>
+</div>
+<div class="terminal-entry">
+<p><span class="terminal-prompt">Rem@macbook</span> <span class="terminal-path">~ %</span> cat about.txt</p>
+<p class="terminal-output">안녕하세요. 만들고, 부수고, 다시 배우며 성장하는 김진형입니다. 웹부터 AI, 로봇, 보안까지 궁금한 것을 직접 프로젝트로 만들어 봅니다.</p>
+</div>
+</div>
+<div class="terminal-input-area">
+<p id="terminal-hint" class="terminal-hint">help를 입력해 둘러보세요.</p>
+<form class="terminal-form"><span class="terminal-prompt" aria-hidden="true">~ %</span><input aria-label="터미널 명령어" aria-describedby="terminal-hint" placeholder="help" autoComplete="off" autoCapitalize="off" spellCheck="false" maxLength="200" enterKeyHint="send" value=""/><button type="submit" aria-label="명령어 실행" title="명령어 실행"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-down-left" aria-hidden="true"><path d="M20 4v7a4 4 0 0 1-4 4H4"></path><path d="m9 10-5 5 5 5"></path></svg></button>
+</form>
+</div>
+</div>
+</section>
+</section>
+<section id="stack" aria-labelledby="stack-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="stack-heading">주로 쓰는 기술</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="stack-grid">
+<div class="stack-group">
+<h3>언어</h3>
+<ul class="stack-items">
+<li>Python</li>
+<li>JavaScript</li>
+<li>TypeScript</li>
+<li>Java</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>웹 프론트엔드</h3>
+<ul class="stack-items">
+<li>React</li>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>앱 개발</h3>
+<ul class="stack-items">
+<li>Jetpack Compose</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>백엔드</h3>
+<ul class="stack-items">
+<li>FastAPI</li>
+<li>Node.js</li>
+<li>Firebase</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>보안 &amp; AI</h3>
+<ul class="stack-items">
+<li>Ghidra</li>
+<li>AI &amp; ML</li>
+<li>Robotics</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>개발 도구</h3>
+<ul class="stack-items">
+<li>Docker</li>
+<li>GitHub</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="projects" aria-labelledby="projects-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="projects-heading">직접 만들고, 함께 만든 프로젝트</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="work-grid">
+<article id="project-ghas" aria-labelledby="project-ghas-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>학교생활 · 모바일 앱</span>
+</div>
+<h3 id="project-ghas-heading">GHAS 알리미</h3>
+<p class="project-summary">경기자동차과학고 학생들을 위한 생활 지원 앱입니다. 급식과 시간표를 한곳에서 확인할 수 있습니다.</p>
+<ul class="project-tags" aria-label="GHAS 알리미 기술 및 분야">
+<li>Android</li>
+<li>iOS</li>
+<li>NEIS API</li>
+</ul>
+<div class="project-actions"><a href="https://play.google.com/store/apps/details?id=kr.hs.ghas.ghason" target="_blank" rel="noreferrer" aria-label="GHAS 알리미 Play Store (새 탭)">Play Store<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://apps.apple.com/kr/app/ghas%EC%95%8C%EB%A6%AC%EB%AF%B8/id6779186783" target="_blank" rel="noreferrer" aria-label="GHAS 알리미 App Store (새 탭)">App Store<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-lhlinux" aria-labelledby="project-lhlinux-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>Linux · CLI · Ubuntu</span>
+</div>
+<h3 id="project-lhlinux-heading">lhLinux</h3>
+<p class="project-summary">Ubuntu 24.04 LTS 기반의 오픈소스 WSL2 CLI 배포판으로, 누구나 설치하고 개선할 수 있는 개발 환경 프로젝트입니다.</p>
+<ul class="project-tags" aria-label="lhLinux 기술 및 분야">
+<li>WSL2</li>
+<li>CLI</li>
+<li>Ubuntu</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/rem0116kjh/lhlinux" target="_blank" rel="noreferrer" aria-label="lhLinux GitHub (새 탭)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-gcpt" aria-labelledby="project-gcpt-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>AI · 협업 프로젝트</span>
+</div>
+<h3 id="project-gcpt-heading">GCPT</h3>
+<p class="project-summary">GPT, Claude, Gemini의 토론을 시각화하고 추론 흐름을 분석합니다. 디자인과 일부 기능 구현에 참여했습니다.</p>
+<ul class="project-tags" aria-label="GCPT 기술 및 분야">
+<li>AI Debate</li>
+<li>시각화</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/cksdud32/gcpt" target="_blank" rel="noreferrer" aria-label="GCPT GitHub (새 탭)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-suffice-patch" aria-labelledby="project-suffice-patch-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>개발 도구 · AI 에이전트 스킬</span>
+</div>
+<h3 id="project-suffice-patch-heading">SufficePatch</h3>
+<p class="project-summary">Codex와 Claude Code가 코드 수정 전에 필요한 소스·프로젝트 지침·의존성·테스트 후보·Git 변경 내역을 모으는 스킬입니다. 다언어·모노레포 탐색과 요약·JSON 출력을 지원합니다.</p>
+<ul class="project-tags" aria-label="SufficePatch 기술 및 분야">
+<li>Python</li>
+<li>Codex</li>
+<li>Claude Code</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/rem0116kjh/suffice-patch" target="_blank" rel="noreferrer" aria-label="SufficePatch GitHub (새 탭)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://rem0116kjh.github.io/suffice-patch/" target="_blank" rel="noreferrer" aria-label="SufficePatch 스킬 설명 (새 탭)">스킬 설명<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-ktspace" aria-labelledby="project-ktspace-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>과학 교육 · 시뮬레이션</span>
+</div>
+<h3 id="project-ktspace-heading">KTspace</h3>
+<p class="project-summary">태양의 질량·거리·밝기 등 조건을 바꾸며 행성 궤도와 지구 환경을 비교하는 교육용 태양계 시뮬레이터입니다. 10가지 실험, 탐구 노트와 CSV 내보내기를 제공합니다.</p>
+<ul class="project-tags" aria-label="KTspace 기술 및 분야">
+<li>Python</li>
+<li>Streamlit</li>
+<li>Physics</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/rem0116kjh/KTspace" target="_blank" rel="noreferrer" aria-label="KTspace GitHub (새 탭)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+</div><a href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer" class="projects-footnote">GitHub에서 모든 프로젝트 보기 <span aria-hidden="true">→</span></a>
+</section>
+<section id="awards" aria-labelledby="awards-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="awards-heading">대회 · 자격</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="record-groups-grid">
+<section class="record-group" aria-labelledby="awards-development-heading">
+<div class="record-group-heading">
+<h3 id="awards-development-heading">개발 분야</h3>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026.07</span>
+<div class="record-title">
+<p>정보처리산업기사</p>
+</div><span class="record-badge">합격</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="연도 미기재">—</span>
+<div class="record-title">
+<p>총장배 로봇 프로그래밍 경진대회</p>
+</div><span class="record-badge">3등</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="연도 미기재">—</span>
+<div class="record-title">
+<p>미래를 그리는 알고리즘 경진대회</p>
+</div><span class="record-badge">2등</span>
+</li>
+</ul>
+</section>
+<section class="record-group" aria-labelledby="awards-hacking-heading">
+<div class="record-group-heading">
+<h3 id="awards-hacking-heading">해킹 분야</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="awards-hacking-more" aria-label="추가 해킹 분야 기록 4개 더 보기"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>더 보기 (4)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>FAUST CTF 2026</p>
+</div><span class="record-badge">60등</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>ASIS CTF Quals 2026, Iran Tech Olympics CTF 2026</p>
+</div><span class="record-badge">예선 10등</span>
+</li>
+<li class="record-row"><span class="record-date">2026.08.22</span>
+<div class="record-title">
+<p>CCE 예선전</p>
+</div><span class="record-badge">예선 15등</span>
+</li>
+</ul>
+<div id="awards-hacking-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>COSS 청소년 사이버 해킹방어</p>
+</div><span class="record-badge">예선 7등</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>사이버가디언즈 CMX</p>
+</div><span class="record-badge">팀별 18등</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>SCA CTF</p>
+</div><span class="record-badge">본선 20등</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="연도 미기재">—</span>
+<div class="record-title">
+<p>현대오토에버 화이트해커 경진대회</p>
+</div><span class="record-badge">입상</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="record-group" aria-labelledby="awards-other-heading">
+<div class="record-group-heading">
+<h3 id="awards-other-heading">그 외 분야</h3>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date" aria-label="연도 미기재">—</span>
+<div class="record-title">
+<p>교내 포트폴리오 경진대회</p>
+<p class="record-detail">1·2학년 연속 수상</p>
+</div><span class="record-badge">3등</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="연도 미기재">—</span>
+<div class="record-title">
+<p>봉사 부문 표창</p>
+</div><span class="record-badge">수상</span>
+</li>
+</ul>
+</section>
+</div>
+</section>
+<section id="activities" aria-labelledby="activities-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="activities-heading">활동</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="record-groups-grid">
+<section class="record-group" aria-labelledby="activities-development-heading">
+<div class="record-group-heading">
+<h3 id="activities-development-heading">개발 분야</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="activities-development-more" aria-label="추가 개발 분야 기록 3개 더 보기"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>더 보기 (3)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>제8회 전국 학생 AI 경진대회</p>
+<p class="record-detail">교과연계 AI 탐구 부문 · 본선 준비 중</p>
+</div><span class="record-badge">본선 진출</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>카카오 AI TOP 100</p>
+</div><span class="record-badge">준비 중</span>
+</li>
+<li class="record-row"><span class="record-date">2025-2026</span>
+<div class="record-title">
+<p>비주얼캠프 도제활동</p>
+</div><span class="record-badge">교육</span>
+</li>
+</ul>
+<div id="activities-development-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>흐르르 애플리케이션 플랫폼</p>
+</div><span class="record-badge">개발</span>
+</li>
+<li class="record-row"><span class="record-date">2024</span>
+<div class="record-title">
+<p>인공지능 창업체험과 특강</p>
+</div><span class="record-badge">교육</span>
+</li>
+<li class="record-row"><span class="record-date">2024</span>
+<div class="record-title">
+<p>앱인벤터·메이커 활동</p>
+</div><span class="record-badge">프로젝트</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="record-group" aria-labelledby="activities-hacking-heading">
+<div class="record-group-heading">
+<h3 id="activities-hacking-heading">해킹 분야</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="activities-hacking-more" aria-label="추가 해킹 분야 기록 4개 더 보기"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>더 보기 (4)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>KISA 버그헌팅 실습훈련 초급과정</p>
+<p class="record-detail">수료증 취득</p>
+</div><span class="record-badge">수료</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p><a href="https://ctftime.org/event/3340" target="_blank" rel="noreferrer" aria-label="HITCON CTF 2026 (새 탭)">HITCON CTF 2026</a>
+</p>
+</div><span class="record-badge">준비 중</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Null; 해킹팀</p>
+</div><span class="record-badge">팀 리더</span>
+</li>
+</ul>
+<div id="activities-hacking-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Hwalbin 해킹팀</p>
+</div><span class="record-badge">팀원</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>경기 청소년 사이버 보안 캠프</p>
+</div><span class="record-badge">참여</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>.HACK 컨퍼런스</p>
+</div><span class="record-badge">컨퍼런스</span>
+</li>
+<li class="record-row"><span class="record-date">2025</span>
+<div class="record-title">
+<p>현대오토에버 고교생 IT 꿈나무 화이트해커</p>
+</div><span class="record-badge">교육</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="record-group" aria-labelledby="activities-other-heading">
+<div class="record-group-heading">
+<h3 id="activities-other-heading">그 외 분야</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="activities-other-more" aria-label="추가 그 외 분야 기록 1개 더 보기"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>더 보기 (1)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>The Ignition 2026 :: YHHS X Hashed</p>
+</div><span class="record-badge">컨퍼런스</span>
+</li>
+<li class="record-row"><span class="record-date">2024–2026</span>
+<div class="record-title">
+<p>학생기자단과 학교 블로그</p>
+</div><span class="record-badge">기자단</span>
+</li>
+<li class="record-row"><span class="record-date">2024–2025</span>
+<div class="record-title">
+<p>청소년운영위원회 정책부</p>
+</div><span class="record-badge">위원</span>
+</li>
+</ul>
+<div id="activities-other-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2024</span>
+<div class="record-title">
+<p>네이버 청소년 크리에이터 스쿨</p>
+</div><span class="record-badge">교육</span>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</section>
+<section class="portfolio-section" aria-labelledby="journal-heading">
+<div class="section-heading">
+<h2 id="journal-heading">배우고 기록하기</h2><span class="heading-line" aria-hidden="true"></span>
+</div><a href="https://velog.io/@luka0116kjh/posts" target="_blank" rel="noreferrer" class="journal-link">
+<div>
+<h3>Velog 기술 블로그</h3>
+<p>개발, 보안, AI 관련 기술 글</p>
+</div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</section>
+<section id="contact" class="portfolio-section contact-section" aria-labelledby="contact-heading">
+<div class="section-heading">
+<h2 id="contact-heading">연락하기</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<p class="contact-copy">함께 만들고 싶은 프로젝트가 있나요?<br/>개발 이야기부터 가벼운 인사까지, 편하게 연락해 주세요.</p><a class="outline-link contact-cta" href="mailto:kjh08116@naver.com">인사 보내기 <span aria-hidden="true">→</span></a>
+<ul class="social-links">
+<li><a href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer"><span>GitHub</span><span>@rem0116kjh</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</li>
+<li><a href="mailto:kjh08116@naver.com"><span>Email</span><span>kjh08116@naver.com</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</li>
+<li><a href="https://velog.io/@luka0116kjh/posts" target="_blank" rel="noreferrer"><span>Velog</span><span>@luka0116kjh</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</li>
+</ul>
+</section>
+</main>
+<footer class="site-footer">
+<div class="portfolio-container">
+<p>© 2026 Rem</p>
+<p>Made with curiosity. Always learning.</p><a href="#top">맨 위로 ↑</a>
+</div>
+</footer>
+</div>
+<script id="terminal-data" type="application/json">
+{
+  "profile": {
+    "name": "Rem",
+    "role": "Programmer & Builder & Hacker",
+    "bio": "안녕하세요. 만들고, 부수고, 다시 배우며 성장하는 김진형입니다. 웹부터 AI, 로봇, 보안까지 궁금한 것을 직접 프로젝트로 만들어 봅니다."
+  },
+  "skills": [
+    {
+      "name": "언어",
+      "items": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java"
+      ]
+    },
+    {
+      "name": "웹 프론트엔드",
+      "items": [
+        "React",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "앱 개발",
+      "items": [
+        "Jetpack Compose"
+      ]
+    },
+    {
+      "name": "백엔드",
+      "items": [
+        "FastAPI",
+        "Node.js",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "보안 & AI",
+      "items": [
+        "Ghidra",
+        "AI & ML",
+        "Robotics"
+      ]
+    },
+    {
+      "name": "개발 도구",
+      "items": [
+        "Docker",
+        "GitHub"
+      ]
+    }
+  ]
+}
+</script>
+<noscript><style>.record-group [hidden]{display:block!important}.more-button,.theme-toggle,.terminal-input-area{display:none!important}</style></noscript>
+</body>
+</html>

@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A monochrome developer portfolio with projects, a terminal, and a learning journal.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>Rem · Developer Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (() => {
+      let dark = true;
+      try { const saved = localStorage.getItem('design-archive.rem.theme.v1'); if (saved !== null) dark = saved === 'dark'; } catch {}
+      document.documentElement.classList.toggle('dark', dark);
+      document.querySelector('meta[name="theme-color"]').content = dark ? '#0a0a0a' : '#fafafa';
+    })();
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+<!-- Edit the profile, projects, skills, records, and contact links directly below.
+     en.html is the English edition. Update terminal-data as well when editing the introduction or skills. -->
+<div class="portfolio-page"><a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="portfolio-container header-inner"><a href="#top" class="site-logo" aria-label="Rem home"><span aria-hidden="true">◆</span> Rem</a>
+<nav aria-label="Primary navigation"><a href="#about">About</a><a href="#stack">Stack</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</nav><a class="language-toggle" href="index.html" lang="ko" hreflang="ko" aria-label="한국어로 보기">KO</a><button type="button" class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg></button>
+</div>
+</header>
+<main id="main" tabindex="-1" class="portfolio-container">
+<section id="top" class="portfolio-hero" aria-labelledby="hero-heading">
+<p class="hero-kicker">Hi there, I’m</p>
+<h1 id="hero-heading">Rem<span>.</span>
+</h1>
+<p class="hero-tagline">Build, explore, learn<span class="hero-period">.</span>
+</p>
+<p class="hero-description">I’m Jinhyeong Kim, a student developer solving everyday problems with code. I build <strong>useful tools</strong>, explore <strong>web security and AI</strong>, and share what I learn through projects and writing.</p>
+<div class="hero-actions"><a href="#projects" class="primary-link">View projects<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-down" aria-hidden="true"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg></a><a href="#contact" class="outline-link">contact <span aria-hidden="true">→</span></a>
+</div>
+</section>
+<section id="about" aria-labelledby="about-heading" class="portfolio-section about-section">
+<div class="section-heading">
+<h2 id="about-heading">About</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="about-intro">
+<div class="about-prose">
+<p>Hi, I’m Jinhyeong Kim. I grow by building, breaking, and learning again. I turn my curiosity about the web, AI, robotics, and security into hands-on projects.</p>
+<p>From <strong>GHAS Alimi</strong> for school life to an open-source Linux environment and AI debate visualization, I explore my interests by building.</p>
+<p class="about-location">South Korea <span>·</span> UTC+9</p>
+</div>
+<dl class="about-facts">
+<div>
+<dt>School</dt>
+<dd>Gyeonggi Automotive Science High School · Senior</dd>
+</div>
+<div>
+<dt>Major</dt>
+<dd>Future Automotive Engineering</dd>
+</div>
+<div>
+<dt>Goal</dt>
+<dd>Software Engineer / AI Engineer</dd>
+</div>
+</dl>
+</div>
+<section class="mac-desktop" aria-label="터미널로 만나는 Rem">
+<div class="mac-window mac-terminal">
+<div class="mac-window-bar">
+<div class="mac-window-dots" aria-hidden="true"><span></span><span></span><span></span>
+</div>
+<div class="mac-window-title"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-terminal" aria-hidden="true"><path d="M12 19h8"></path><path d="m4 17 6-6-6-6"></path></svg>Rem — zsh</div><span aria-hidden="true"></span>
+</div>
+<div class="terminal-log" role="log" aria-label="터미널 출력" tabindex="0">
+<div class="terminal-entry">
+<p><span class="terminal-prompt">Rem@macbook</span> <span class="terminal-path">~ %</span> whoami</p>
+<p class="terminal-output">Rem · Programmer &amp; Builder &amp; Hacker</p>
+</div>
+<div class="terminal-entry">
+<p><span class="terminal-prompt">Rem@macbook</span> <span class="terminal-path">~ %</span> cat about.txt</p>
+<p class="terminal-output">Hi, I’m Jinhyeong Kim. I grow by building, breaking, and learning again. I turn my curiosity about the web, AI, robotics, and security into hands-on projects.</p>
+</div>
+</div>
+<div class="terminal-input-area">
+<p id="terminal-hint" class="terminal-hint">help를 입력해 둘러보세요.</p>
+<form class="terminal-form"><span class="terminal-prompt" aria-hidden="true">~ %</span><input aria-label="터미널 명령어" aria-describedby="terminal-hint" placeholder="help" autoComplete="off" autoCapitalize="off" spellCheck="false" maxLength="200" enterKeyHint="send" value=""/><button type="submit" aria-label="명령어 실행" title="명령어 실행"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-corner-down-left" aria-hidden="true"><path d="M20 4v7a4 4 0 0 1-4 4H4"></path><path d="m9 10-5 5 5 5"></path></svg></button>
+</form>
+</div>
+</div>
+</section>
+</section>
+<section id="stack" aria-labelledby="stack-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="stack-heading">Tools I work with</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="stack-grid">
+<div class="stack-group">
+<h3>Languages</h3>
+<ul class="stack-items">
+<li>Python</li>
+<li>JavaScript</li>
+<li>TypeScript</li>
+<li>Java</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>Web Frontend</h3>
+<ul class="stack-items">
+<li>React</li>
+<li>HTML</li>
+<li>CSS</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>App Development</h3>
+<ul class="stack-items">
+<li>Jetpack Compose</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>Backend</h3>
+<ul class="stack-items">
+<li>FastAPI</li>
+<li>Node.js</li>
+<li>Firebase</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>Security &amp; AI</h3>
+<ul class="stack-items">
+<li>Ghidra</li>
+<li>AI &amp; ML</li>
+<li>Robotics</li>
+</ul>
+</div>
+<div class="stack-group">
+<h3>Developer Tools</h3>
+<ul class="stack-items">
+<li>Docker</li>
+<li>GitHub</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="projects" aria-labelledby="projects-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="projects-heading">Selected projects</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="work-grid">
+<article id="project-ghas" aria-labelledby="project-ghas-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>Student life · Mobile app</span>
+</div>
+<h3 id="project-ghas-heading">GHAS Alimi</h3>
+<p class="project-summary">A daily-life support app for students at Gyeonggi Automotive Science High School, bringing school meals and schedules together.</p>
+<ul class="project-tags" aria-label="GHAS Alimi technologies and areas">
+<li>Android</li>
+<li>iOS</li>
+<li>NEIS API</li>
+</ul>
+<div class="project-actions"><a href="https://play.google.com/store/apps/details?id=kr.hs.ghas.ghason" target="_blank" rel="noreferrer" aria-label="GHAS Alimi Play Store (opens in a new tab)">Play Store<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://apps.apple.com/kr/app/ghas%EC%95%8C%EB%A6%AC%EB%AF%B8/id6779186783" target="_blank" rel="noreferrer" aria-label="GHAS Alimi App Store (opens in a new tab)">App Store<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-lhlinux" aria-labelledby="project-lhlinux-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>Linux · CLI · Ubuntu</span>
+</div>
+<h3 id="project-lhlinux-heading">lhLinux</h3>
+<p class="project-summary">An open-source WSL2 CLI distribution based on Ubuntu 24.04 LTS, designed as a development environment anyone can install and improve.</p>
+<ul class="project-tags" aria-label="lhLinux technologies and areas">
+<li>WSL2</li>
+<li>CLI</li>
+<li>Ubuntu</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/rem0116kjh/lhlinux" target="_blank" rel="noreferrer" aria-label="lhLinux GitHub (opens in a new tab)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-gcpt" aria-labelledby="project-gcpt-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>AI · Collaboration</span>
+</div>
+<h3 id="project-gcpt-heading">GCPT</h3>
+<p class="project-summary">Visualizes debates between GPT, Claude, and Gemini and analyzes their reasoning flows. I contributed to the design and parts of the implementation.</p>
+<ul class="project-tags" aria-label="GCPT technologies and areas">
+<li>AI Debate</li>
+<li>Visualization</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/cksdud32/gcpt" target="_blank" rel="noreferrer" aria-label="GCPT GitHub (opens in a new tab)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-suffice-patch" aria-labelledby="project-suffice-patch-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>Developer tools · AI agent skill</span>
+</div>
+<h3 id="project-suffice-patch-heading">SufficePatch</h3>
+<p class="project-summary">A skill that helps Codex and Claude Code gather source files, project instructions, dependencies, test candidates, and Git changes before editing. Supports multiple languages, monorepos, and summary or JSON output.</p>
+<ul class="project-tags" aria-label="SufficePatch technologies and areas">
+<li>Python</li>
+<li>Codex</li>
+<li>Claude Code</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/rem0116kjh/suffice-patch" target="_blank" rel="noreferrer" aria-label="SufficePatch GitHub (opens in a new tab)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a><a href="https://rem0116kjh.github.io/suffice-patch/" target="_blank" rel="noreferrer" aria-label="SufficePatch Skill guide (opens in a new tab)">Skill guide<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+<article id="project-ktspace" aria-labelledby="project-ktspace-heading" class="work-card">
+<div class="project-card-head"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-folder" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path></svg><span>Science education · Simulation</span>
+</div>
+<h3 id="project-ktspace-heading">KTspace</h3>
+<p class="project-summary">An educational solar system simulator for comparing planetary orbits and Earth conditions by changing solar mass, distance, brightness, and more. Includes 10 experiments, inquiry notes, and CSV export.</p>
+<ul class="project-tags" aria-label="KTspace technologies and areas">
+<li>Python</li>
+<li>Streamlit</li>
+<li>Physics</li>
+</ul>
+<div class="project-actions"><a href="https://github.com/rem0116kjh/KTspace" target="_blank" rel="noreferrer" aria-label="KTspace GitHub (opens in a new tab)">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</div>
+</article>
+</div><a href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer" class="projects-footnote">All projects on GitHub <span aria-hidden="true">→</span></a>
+</section>
+<section id="awards" aria-labelledby="awards-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="awards-heading">Awards &amp; Certifications</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="record-groups-grid">
+<section class="record-group" aria-labelledby="awards-development-heading">
+<div class="record-group-heading">
+<h3 id="awards-development-heading">Development</h3>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026.07</span>
+<div class="record-title">
+<p>Industrial Engineer Information Processing</p>
+</div><span class="record-badge">Passed</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="Date not listed">—</span>
+<div class="record-title">
+<p>Presidential Robot Programming Contest</p>
+</div><span class="record-badge">3rd place</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="Date not listed">—</span>
+<div class="record-title">
+<p>Future Algorithm Contest</p>
+</div><span class="record-badge">2nd place</span>
+</li>
+</ul>
+</section>
+<section class="record-group" aria-labelledby="awards-hacking-heading">
+<div class="record-group-heading">
+<h3 id="awards-hacking-heading">Hacking</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="awards-hacking-more" aria-label="Show more Hacking"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>More (4)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>FAUST CTF 2026</p>
+</div><span class="record-badge">60th place</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>ASIS CTF Quals 2026, Iran Tech Olympics CTF 2026</p>
+</div><span class="record-badge">10th in qualifiers</span>
+</li>
+<li class="record-row"><span class="record-date">2026.08.22</span>
+<div class="record-title">
+<p>CCE Qualifiers</p>
+</div><span class="record-badge">15th in qualifiers</span>
+</li>
+</ul>
+<div id="awards-hacking-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>COSS Youth Cyber Defense</p>
+</div><span class="record-badge">7th in qualifiers</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Cyber Guardians CMX</p>
+</div><span class="record-badge">18th by team</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>SCA CTF</p>
+</div><span class="record-badge">20th in finals</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="Date not listed">—</span>
+<div class="record-title">
+<p>Hyundai AutoEver White Hat Hacker Contest</p>
+</div><span class="record-badge">Award winner</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="record-group" aria-labelledby="awards-other-heading">
+<div class="record-group-heading">
+<h3 id="awards-other-heading">Other</h3>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date" aria-label="Date not listed">—</span>
+<div class="record-title">
+<p>School Portfolio Contest</p>
+<p class="record-detail">Awarded in both freshman and sophomore years</p>
+</div><span class="record-badge">3rd place</span>
+</li>
+<li class="record-row"><span class="record-date" aria-label="Date not listed">—</span>
+<div class="record-title">
+<p>Volunteer Service Award</p>
+</div><span class="record-badge">Awarded</span>
+</li>
+</ul>
+</section>
+</div>
+</section>
+<section id="activities" aria-labelledby="activities-heading" class="portfolio-section">
+<div class="section-heading">
+<h2 id="activities-heading">Activities</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<div class="record-groups-grid">
+<section class="record-group" aria-labelledby="activities-development-heading">
+<div class="record-group-heading">
+<h3 id="activities-development-heading">Development</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="activities-development-more" aria-label="Show more Development"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>More (3)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>8th National Student AI Competition</p>
+<p class="record-detail">Curriculum-linked AI Inquiry · Preparing for the finals</p>
+</div><span class="record-badge">Finalist</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Kakao AI TOP 100</p>
+</div><span class="record-badge">In preparation</span>
+</li>
+<li class="record-row"><span class="record-date">2025-2026</span>
+<div class="record-title">
+<p>Visualcamp Apprenticeship</p>
+</div><span class="record-badge">Training</span>
+</li>
+</ul>
+<div id="activities-development-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Heureureu Application Platform</p>
+</div><span class="record-badge">Development</span>
+</li>
+<li class="record-row"><span class="record-date">2024</span>
+<div class="record-title">
+<p>AI Startup Experience &amp; Lectures</p>
+</div><span class="record-badge">Training</span>
+</li>
+<li class="record-row"><span class="record-date">2024</span>
+<div class="record-title">
+<p>App Inventor &amp; Maker Activities</p>
+</div><span class="record-badge">Project</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="record-group" aria-labelledby="activities-hacking-heading">
+<div class="record-group-heading">
+<h3 id="activities-hacking-heading">Hacking</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="activities-hacking-more" aria-label="Show more Hacking"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>More (4)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>KISA Bug Hunting Practical Training · Beginner Course</p>
+<p class="record-detail">Certificate of completion earned</p>
+</div><span class="record-badge">Completed</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p><a href="https://ctftime.org/event/3340" target="_blank" rel="noreferrer" aria-label="HITCON CTF 2026 (opens in a new tab)">HITCON CTF 2026</a>
+</p>
+</div><span class="record-badge">In preparation</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Null; Hacking Team</p>
+</div><span class="record-badge">Team lead</span>
+</li>
+</ul>
+<div id="activities-hacking-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Hwalbin Hacking Team</p>
+</div><span class="record-badge">Member</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>Gyeonggi Youth Cybersecurity Camp</p>
+</div><span class="record-badge">Participant</span>
+</li>
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>.HACK Conference</p>
+</div><span class="record-badge">Conference</span>
+</li>
+<li class="record-row"><span class="record-date">2025</span>
+<div class="record-title">
+<p>Hyundai AutoEver High School White Hat Hacker Program</p>
+</div><span class="record-badge">Training</span>
+</li>
+</ul>
+</div>
+</section>
+<section class="record-group" aria-labelledby="activities-other-heading">
+<div class="record-group-heading">
+<h3 id="activities-other-heading">Other</h3><button type="button" class="more-button" aria-expanded="false" aria-controls="activities-other-more" aria-label="Show more Other"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>More (1)</button>
+</div>
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2026</span>
+<div class="record-title">
+<p>The Ignition 2026 :: YHHS X Hashed</p>
+</div><span class="record-badge">Conference</span>
+</li>
+<li class="record-row"><span class="record-date">2024–2026</span>
+<div class="record-title">
+<p>Student Press &amp; School Blog</p>
+</div><span class="record-badge">Student press</span>
+</li>
+<li class="record-row"><span class="record-date">2024–2025</span>
+<div class="record-title">
+<p>Youth Operations Committee · Policy Division</p>
+</div><span class="record-badge">Committee member</span>
+</li>
+</ul>
+<div id="activities-other-more" hidden="">
+<ul class="record-list">
+<li class="record-row"><span class="record-date">2024</span>
+<div class="record-title">
+<p>Naver Youth Creator School</p>
+</div><span class="record-badge">Training</span>
+</li>
+</ul>
+</div>
+</section>
+</div>
+</section>
+<section class="portfolio-section" aria-labelledby="journal-heading">
+<div class="section-heading">
+<h2 id="journal-heading">Learn &amp; Share</h2><span class="heading-line" aria-hidden="true"></span>
+</div><a href="https://velog.io/@luka0116kjh/posts" target="_blank" rel="noreferrer" class="journal-link">
+<div>
+<h3>Velog Tech Blog</h3>
+<p>Technical writing on development, security, and AI</p>
+</div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</section>
+<section id="contact" class="portfolio-section contact-section" aria-labelledby="contact-heading">
+<div class="section-heading">
+<h2 id="contact-heading">Get in touch</h2><span class="heading-line" aria-hidden="true"></span>
+</div>
+<p class="contact-copy">Have a project in mind?<br/>Let’s talk about building something, or just say hello.</p><a class="outline-link contact-cta" href="mailto:kjh08116@naver.com">Say hello <span aria-hidden="true">→</span></a>
+<ul class="social-links">
+<li><a href="https://github.com/rem0116kjh" target="_blank" rel="noreferrer"><span>GitHub</span><span>@rem0116kjh</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</li>
+<li><a href="mailto:kjh08116@naver.com"><span>Email</span><span>kjh08116@naver.com</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</li>
+<li><a href="https://velog.io/@luka0116kjh/posts" target="_blank" rel="noreferrer"><span>Velog</span><span>@luka0116kjh</span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+</li>
+</ul>
+</section>
+</main>
+<footer class="site-footer">
+<div class="portfolio-container">
+<p>© 2026 Rem</p>
+<p>Made with curiosity. Always learning.</p><a href="#top">Back to top ↑</a>
+</div>
+</footer>
+</div>
+<script id="terminal-data" type="application/json">
+{
+  "profile": {
+    "name": "Rem",
+    "role": "Programmer & Builder & Hacker",
+    "bio": "Hi, I’m Jinhyeong Kim. I grow by building, breaking, and learning again. I turn my curiosity about the web, AI, robotics, and security into hands-on projects."
+  },
+  "skills": [
+    {
+      "name": "Languages",
+      "items": [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java"
+      ]
+    },
+    {
+      "name": "Web Frontend",
+      "items": [
+        "React",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "name": "App Development",
+      "items": [
+        "Jetpack Compose"
+      ]
+    },
+    {
+      "name": "Backend",
+      "items": [
+        "FastAPI",
+        "Node.js",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "Security & AI",
+      "items": [
+        "Ghidra",
+        "AI & ML",
+        "Robotics"
+      ]
+    },
+    {
+      "name": "Developer Tools",
+      "items": [
+        "Docker",
+        "GitHub"
+      ]
+    }
+  ]
+}
+</script>
+<noscript><style>.record-group [hidden]{display:block!important}.more-button,.theme-toggle,.terminal-input-area{display:none!important}</style></noscript>
+</body>
+</html>
