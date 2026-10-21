@@ -1,0 +1,53 @@
+# Rem / 김진형 — Interactive Explosion Portfolio
+
+기존 Rem 포트폴리오의 실제 소개·프로젝트·대회·활동·연락처를 폭발 디자인에 연결한 독립 HTML 버전입니다. 올리브 블랙·오렌지, 3초 폭발 인트로와 Canvas 조형을 유지했습니다.
+
+## 실행
+
+index.html을 더블클릭하면 열립니다. 폴더의 이미지·폰트·CSS·JS를 함께 보관하세요. 설치·빌드·외부 라이브러리가 필요하지 않습니다. 정적 서버를 쓰려면 이 폴더에서 python3 -m http.server 8080을 실행하고 http://localhost:8080을 여세요.
+
+이메일 복사는 HTTPS 또는 localhost에서 지원하며, 권한이 없으면 주소를 화면에 표시합니다.
+
+## 연결한 내용
+
+- Rem / Jin-hyung Kim / 김진형의 소개와 기술 스택 6개 분야.
+- 대표 프로젝트 5개: GHAS 알리미, SufficePatch, KTspace, GCPT, lhLinux.
+- 프로젝트 상세 창의 스토어·저장소·설명 링크 7개.
+- 대회·자격 12개와 활동 17개. 원본의 날짜·순위·진행 상태를 유지했습니다.
+- 이메일 kjh08116@naver.com, GitHub, Velog, 기존 포트폴리오 연결.
+- GHAS 알리미의 실제 앱 화면. 나머지 프로젝트는 설명용 자체 일러스트입니다.
+
+원본은 /Users/luka/Desktop/portfolio-react/src/translations.js의 한국어 콘텐츠입니다. content.json은 연결 시점의 스냅샷이며 원본의 이후 변경을 자동으로 동기화하지 않습니다. 원본 React 프로젝트는 수정하지 않았습니다.
+
+- 기존 포트폴리오: https://rem0116kjh.github.io/portfolio-react/
+- GitHub: https://github.com/rem0116kjh
+- Velog: https://velog.io/@luka0116kjh/posts
+
+## 3D 프로그램 전시
+
+기존 이미지 카드 대신 프로그램마다 다른 입체 구조를 직접 구성했습니다. GHAS는 일정 매트릭스, SufficePatch는 파일 조립 구조, KTspace는 실험 장치, GCPT는 세 대화 모듈, lhLinux는 터미널 스택입니다.
+
+프로그램 선택, 드래그·방향키 회전, 회전 초기화와 실제 프로젝트 상세 링크를 지원합니다. 단일 Canvas에 3D 좌표·면 가림·원근·광원·텍스트 평면을 직접 그리며 추가 라이브러리를 사용하지 않습니다. 화면 밖이거나 조작이 끝나면 렌더링을 멈춥니다. 작은 화면에서는 세로 스크롤을 유지하며 가로 드래그로 회전합니다. 동작 줄이기를 지원하고, JavaScript가 없으면 정적 프로젝트 소개를 표시합니다.
+
+## 인터랙션
+
+첫 방문 3 → 2 → 1 → 폭발. 3,000ms 마감 다음 렌더 프레임에 빛·충격파·입자·짧은 흔들림이 시작됩니다. 데스크톱 230개, 좁은 화면 또는 터치 입력 85개 입자를 사용하며 메인 조형으로 모입니다.
+
+Skip Intro·Escape·다시 재생·재방문 생략·저장소 차단 대응, 포인터 패럴랙스, 스크롤 등장·타임라인·진행률, 프로젝트 상세 5개, 대회·활동 펼치기, 모바일 메뉴, 이메일 복사를 제공합니다. prefers-reduced-motion에서는 인트로와 반복 움직임을 생략합니다.
+
+JavaScript가 실행되지 않아도 소개·프로젝트 요약·전체 기록·연락처를 읽을 수 있습니다. 상세 모달 등 JS 기능은 실행되지 않습니다.
+
+## 수정과 출처
+
+- index.html: 개인 콘텐츠와 시맨틱 구조
+- style.css: 색상 변수·레이아웃·반응형
+- project-lab.js: 독자적인 3D 조형·회전·전시 선택
+- script.js의 projects 객체: 상세 창 내용·연결 주소
+- content.json: 연결 시점의 원본 포트폴리오 콘텐츠
+- assets/: 실제 앱 화면·일러스트·로컬 폰트
+- SOURCES.md: 콘텐츠와 에셋 출처
+- VERIFICATION.md와 preview/: 브라우저 검사 자료
+
+content.json만 수정하면 HTML이 자동으로 바뀌지는 않습니다. 이메일은 mailto: 링크들을 함께 수정하면 복사 버튼이 해당 주소를 읽습니다. Nacelle·Pretendard SIL OFL 라이선스 파일은 배포 시 유지하세요.
+
+콘텐츠와 공개 링크를 연결한 것이며, 대회 결과나 앱 출시·외부 서비스 상태를 새로 인증한 결과는 아닙니다.

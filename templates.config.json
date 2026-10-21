@@ -1,6 +1,24 @@
 {
   "templates": [
     {
+      "id": "ignition",
+      "name": "폭발",
+      "folder": "폭발",
+      "category": "CREATING BEYOND LIMITS",
+      "description": "김진형의 실제 프로젝트를 서로 다른 3D 구조로 전시하는 폭발 인터랙티브 포트폴리오.",
+      "tags": [
+        "EXPLOSION",
+        "3D EXHIBITION",
+        "CANVAS",
+        "COUNTDOWN",
+        "OLIVE & ORANGE",
+        "RESPONSIVE",
+        "포트폴리오"
+      ],
+      "fallback": "assets/template-placeholder.svg",
+      "new": true
+    },
+    {
       "id": "l",
       "name": "L",
       "folder": "L",

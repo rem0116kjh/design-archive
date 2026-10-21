@@ -1,0 +1,50 @@
+[
+  {
+    "canvasWidth": 261,
+    "pageWidth": 305,
+    "scrollWidth": 305,
+    "selectedPanels": 1,
+    "stageWidth": 261,
+    "viewport": 320
+  },
+  {
+    "canvasWidth": 316,
+    "pageWidth": 360,
+    "scrollWidth": 360,
+    "selectedPanels": 1,
+    "stageWidth": 316,
+    "viewport": 375
+  },
+  {
+    "canvasWidth": 331,
+    "pageWidth": 375,
+    "scrollWidth": 375,
+    "selectedPanels": 1,
+    "stageWidth": 331,
+    "viewport": 390
+  },
+  {
+    "canvasWidth": 467,
+    "pageWidth": 753,
+    "scrollWidth": 753,
+    "selectedPanels": 1,
+    "stageWidth": 467,
+    "viewport": 768
+  },
+  {
+    "canvasWidth": 701,
+    "pageWidth": 1009,
+    "scrollWidth": 1009,
+    "selectedPanels": 1,
+    "stageWidth": 701,
+    "viewport": 1024
+  },
+  {
+    "canvasWidth": 1024,
+    "pageWidth": 1425,
+    "scrollWidth": 1425,
+    "selectedPanels": 1,
+    "stageWidth": 1024,
+    "viewport": 1440
+  }
+]
