@@ -10,7 +10,7 @@
   let view = 'all', saved = new Set(), canPersist = true, toastTimer;
   try {
     const stored = JSON.parse(localStorage.getItem(storageKey) || '[]');
-    if (Array.isArray(stored)) saved = new Set(stored.filter(id => typeof id === 'string' && validIds.has(id)));
+    if (Array.isArray(stored)) saved = new Set(stored.map(id => id === 'm' && validIds.has('l') ? 'l' : id).filter(id => typeof id === 'string' && validIds.has(id)));
   } catch { canPersist = false; }
   function notify(message) {
     const toast = document.querySelector('.toast');

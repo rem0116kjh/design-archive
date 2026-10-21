@@ -1,0 +1,79 @@
+[
+  {
+    "width": 320,
+    "height": 740,
+    "scrollWidth": 320,
+    "heroWidth": 320,
+    "heroHeight": 740
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "scrollWidth": 375,
+    "heroWidth": 375,
+    "heroHeight": 812
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390,
+    "heroWidth": 390,
+    "heroHeight": 844
+  },
+  {
+    "width": 560,
+    "height": 820,
+    "scrollWidth": 560,
+    "heroWidth": 560,
+    "heroHeight": 820
+  },
+  {
+    "width": 561,
+    "height": 820,
+    "scrollWidth": 561,
+    "heroWidth": 561,
+    "heroHeight": 820
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "scrollWidth": 768,
+    "heroWidth": 768,
+    "heroHeight": 1024
+  },
+  {
+    "width": 959,
+    "height": 900,
+    "scrollWidth": 959,
+    "heroWidth": 959,
+    "heroHeight": 900
+  },
+  {
+    "width": 960,
+    "height": 900,
+    "scrollWidth": 960,
+    "heroWidth": 960,
+    "heroHeight": 900
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "scrollWidth": 1280,
+    "heroWidth": 1280,
+    "heroHeight": 720
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "scrollWidth": 1440,
+    "heroWidth": 1440,
+    "heroHeight": 900
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "scrollWidth": 844,
+    "heroWidth": 844,
+    "heroHeight": 390
+  }
+]

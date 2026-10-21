@@ -1,14 +1,14 @@
 {
   "templates": [
     {
-      "id": "m",
-      "name": "M",
-      "folder": "M",
-      "category": "MAKE IT MATTER",
-      "description": "큰 타이포그래피와 금속 조형물로 펼치는 크리에이티브 포트폴리오.",
+      "id": "l",
+      "name": "L",
+      "folder": "L",
+      "category": "CRAFTED BY L",
+      "description": "실제 3D 유리 조형물과 원본 스크롤 연출로 구성한 포트폴리오.",
       "tags": [
-        "EDITORIAL",
-        "CHROME",
+        "WEBGL",
+        "3D GLASS",
         "RESPONSIVE",
         "PORTFOLIO",
         "MAKERVIL",

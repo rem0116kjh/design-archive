@@ -1,0 +1,99 @@
+[
+  {
+    "url": "https://www.makervil.com/assets/dist/site-cursor.js?v=1792052302",
+    "file": "assets/dist/site-cursor.js",
+    "sha256": "782091a28ece6e93223218b40be6ad288060a016f967609240b142a8d7d7d39d"
+  },
+  {
+    "url": "https://www.makervil.com/assets/dist/chunks/RoundedBoxGeometry-DbW1yx3M.js",
+    "file": "assets/dist/chunks/RoundedBoxGeometry-DbW1yx3M.js",
+    "sha256": "6b308c9962c49254856e948e72666129dd707af31bbdbe2d7302078142e2c461"
+  },
+  {
+    "url": "https://www.makervil.com/assets/dist/chunks/three.module-DbTyATjt.js",
+    "file": "assets/dist/chunks/three.module-DbTyATjt.js",
+    "sha256": "5d1bc169e5a66a28f3fc004bd4fe5c202e120a58da58fae09afa4bd10b4e1391"
+  },
+  {
+    "url": "https://www.makervil.com/assets/dist/chunks/makervil-glass-idle-RcJS0RnU.js",
+    "file": "assets/dist/chunks/makervil-glass-idle-RcJS0RnU.js",
+    "sha256": "c467551ad7a3281f32ebf4fb4d5a33ad5d2c81f4497f0c64c7c2d2355d33fd3e"
+  },
+  {
+    "url": "https://www.makervil.com/assets/dist/chunks/preload-helper-DHlaQ_oz.js",
+    "file": "assets/dist/chunks/preload-helper-DHlaQ_oz.js",
+    "sha256": "f571e0815eacb3daa30a2b23c929553de93e85e621a69e8285acbbb6d0a75ba3"
+  },
+  {
+    "url": "https://www.makervil.com/assets/dist/home-intro.js?v=1792052302",
+    "file": "assets/dist/home-intro.js",
+    "sha256": "db1307d49974e0db501740418c7bcd5358e46d78144e3de3cac7365311b98fc9"
+  },
+  {
+    "url": "https://www.makervil.com/assets/dist/chunks/brand-curve-renderer-CpiL1r_Q.js",
+    "file": "assets/dist/chunks/brand-curve-renderer-CpiL1r_Q.js",
+    "sha256": "d1b3dc665b2c0b2dfbd636a46b0ba6a75f3813281e0978a0a0237150c3a55873"
+  },
+  {
+    "url": "https://www.makervil.com/assets/images/main/contact-bg.jpg",
+    "file": "assets/images/main/contact-bg.jpg",
+    "sha256": "2bbd20008adf8a9764a7b813014d64e573203fdb4f0dd617824c8d4c59c87968"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/nacelle/Nacelle-Regular.otf",
+    "file": "assets/fonts/nacelle/Nacelle-Regular.otf",
+    "sha256": "f4516aaacac91e11aa114a4e3099eb04f2f583880eb6467d670d132bf7121100"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/nacelle/Nacelle-SemiBold.otf",
+    "file": "assets/fonts/nacelle/Nacelle-SemiBold.otf",
+    "sha256": "a8eaab368bd196c664ad43e35c959af48f63f3406071348eb02f2229a3055ad8"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/nacelle/Nacelle-Black.otf",
+    "file": "assets/fonts/nacelle/Nacelle-Black.otf",
+    "sha256": "0610ab6427d7c59b2fad37e614e9f578dba9d25417d7ee6ae99f0e3406ba04a3"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-Regular.subset.woff2",
+    "file": "assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-Regular.subset.woff2",
+    "sha256": "01dd73155fdfab7ce9b25224523e85a96927e21aef97f21957d41f1bfa7e3878"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-SemiBold.subset.woff2",
+    "file": "assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-SemiBold.subset.woff2",
+    "sha256": "4247dc5e260b92640c2cbd0e75091154647b71e1d5884116655e2903468c54cc"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-Medium.subset.woff2",
+    "file": "assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-Medium.subset.woff2",
+    "sha256": "6f4e897a59138903ae64e814df059790cf0e0ff73b8595810145aee23204469f"
+  },
+  {
+    "url": "https://www.makervil.com/assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-Bold.subset.woff2",
+    "file": "assets/fonts/Pretendard/web/static/woff2-subset/Pretendard-Bold.subset.woff2",
+    "sha256": "78eb71c33101ee7d4f8d1b777d193a12d00f8a296e712a8c417cf27abe946397"
+  },
+  {
+    "url": "https://www.makervil.com/assets/images/main/service1.jpg",
+    "file": "assets/images/main/service1.jpg",
+    "sha256": "2d5768167e862de0901a4d74399ebeba80622c0213a031864034042c0d620aa7"
+  },
+  {
+    "url": "https://www.makervil.com/assets/images/main/service2.jpg",
+    "file": "assets/images/main/service2.jpg",
+    "sha256": "96193b27b2b0f2987e2210dba09dfdb293b50a6bd1ed60810f838c811527d46d"
+  },
+  {
+    "url": "https://www.makervil.com/assets/images/main/service3.jpg",
+    "file": "assets/images/main/service3.jpg",
+    "sha256": "2c8dde60db6727e8e19d896b19d10c48fa91f80cdd64b995df411bc5b0850176"
+  },
+  {
+    "url": "https://www.makervil.com/en",
+    "file": "index.html",
+    "adaptation": "Portfolio content and L identity; original homepage DOM, responsive stylesheet, WebGL scene, scroll systems and footer physics retained. Analytics, remote routing and forms omitted.",
+    "reference_css_rules_unchanged_except_asset_urls": true,
+    "captured": "2026-10-21"
+  }
+]
